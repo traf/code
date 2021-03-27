@@ -1,7 +1,13 @@
 :root {
+    --color-white: #fff !important;
     --color-text-default: #fff !important;
-    --color-text-gray: #808c99 !important;
+    --color-text-gray: #8F9BA8 !important;
     --color-text-yellow: #f0bd66 !important;
     --color-bg-default: #000 !important;
     --color-border-default: #131419 !important;
+}
+
+p {
+    color: var(--color-text-gray) !important;
+    line-height: 2 !important;
 }
