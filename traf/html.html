@@ -1,0 +1,24 @@
+<nav class="nav">
+    <a href="/"><img src="https://d33wubrfki0l68.cloudfront.net/d61e34ca8735271f9022d8c5b9b753c711a01376/ba95c/images/logo.svg"/></a>
+    <button class="nav-toggle"><span></span><span></span></button>
+    <div class="nav-links">
+        <a href="/thoughts" class="nav-link">Thoughts</a>
+        <a href="https://instagram.com/traf" target="_blank" class="nav-link">Instagram</a>
+        <a href="https://twitter.com/traf" target="_blank" class="nav-link">Twitter</a>
+        <a href="mailto:trafj@me.com" class="nav-link">Email</a>
+    </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $('.nav-toggle').click(function(){
+        $(this).toggleClass('nav-toggled');
+        $('.nav-links').toggleClass('nav-links-show');
+    });
+    $(document).keydown(function (e) {
+        if (e.key === 'Escape') {
+            $('.nav-toggle').removeClass('nav-toggled');
+            $('.nav-links').removeClass('nav-links-show');
+        }
+    });
+</script>
