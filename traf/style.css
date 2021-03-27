@@ -6,9 +6,7 @@
     border: none !important;
 }
 
-html, body,
-h1, h2, h3, p,
-ul, ol, li {
+html, body, p {
     font-weight: normal !important;
     font-style: normal !important;
     padding: 0 !important;
@@ -28,10 +26,6 @@ ul, ol, li {
     --color-text-yellow: #f0bd66 !important;
     --color-bg-default: #000 !important;
     --color-border-default: #131419 !important;
-}
-
-h1, h2, h3 {
-    font-weight: bold !important;
 }
 
 h3 {
