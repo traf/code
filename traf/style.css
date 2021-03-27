@@ -1,3 +1,20 @@
+* {
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeSpeed !important;
+    font-weight: normal !important;
+    outline: none !important;
+    border: none !important;
+}
+
+html, body,
+h1, h2, h3, p,
+ul, ol, li {
+    font-weight: normal !important;
+    font-style: normal !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 @font-face {
     font-family: 'space';
     src:  url('https://code.tr.af/traf/assets/space.woff') format('woff'),
@@ -13,10 +30,14 @@
     --color-border-default: #131419 !important;
 }
 
+h3 {
+    font-size: 24px !important;
+}
+
 p {
     font-family: 'space', sans-serif !important;
     color: var(--color-text-gray) !important;
     font-weight: 100 !important;
-    font-size: 18px !important;
+    font-size: 20px !important;
     line-height: 2 !important;
 }
