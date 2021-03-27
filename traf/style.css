@@ -1,3 +1,8 @@
+* {
+    outline: none !important;
+    border: none !important;
+}
+
 :root {
     --color-text-default-light: #808c99 !important;
     --color-border-default: #1b1f23 !important;
@@ -16,11 +21,6 @@
     --transition-alt: all 0.8s cubic-bezier(0.2, 1, 0.2, 1) !important;
 }
 
-* {
-    outline: none !important;
-    border: none !important;
-}
-
 .super-content {
     margin-top: 400px !important;
 }
@@ -36,7 +36,6 @@
 
 .notion-navbar,
 .notion-toggle,
-.notion-header,
 .notion-collection__header,
 .notion-property__title__icon-wrapper,
 .notion-header__cover.no-cover {
