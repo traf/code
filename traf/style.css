@@ -4,7 +4,6 @@
           url('https://code.tr.af/traf/assets/space.ttf') format('truetype');
 }
 
-
 :root {
     --color-white: #fff !important;
     --color-text-default: #fff !important;
@@ -18,5 +17,6 @@ p {
     font-family: 'space', sans-serif !important;
     color: var(--color-text-gray) !important;
     font-weight: 100 !important;
+    font-size: 18px !important;
     line-height: 2 !important;
 }
