@@ -24,17 +24,8 @@
     --transition-alt: all 0.8s cubic-bezier(0.2, 1, 0.2, 1) !important;
 }
 
-.super-content {
+.notion-header {
     margin-top: 400px !important;
-}
-
-#page-index h1 a {
-    background: url('https://i.imgur.com/ZN0kszx.gif') no-repeat center center !important;
-    background-size: 0 0 !important;
-}
-#page-index h1 a:hover {
-    background-size: cover !important;
-    color: transparent !important;
 }
 
 .notion-navbar,
@@ -156,6 +147,20 @@ p, ol {
 }
 .notion-semantic-string .link:hover {
     color: var(--color-text-default) !important;
+}
+
+/* Home page styles */
+#page-index .notion-header {
+    display: none !important;
+}
+
+#page-index h1 a {
+    background: url('https://i.imgur.com/ZN0kszx.gif') no-repeat center center !important;
+    background-size: 0 0 !important;
+}
+#page-index h1 a:hover {
+    background-size: cover !important;
+    color: transparent !important;
 }
 
 /* Projects gallery */
