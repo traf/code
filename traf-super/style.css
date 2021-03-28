@@ -132,8 +132,8 @@ h1, h2, h3, p {
 /* Typography */
 h1 {
     letter-spacing: -0.6px !important;
+    font-weight: bold !important;
     line-height: 1.6 !important;
-    font-weight: 100 !important;
     font-size: 42px !important;
 }
 p, ol {
@@ -179,7 +179,7 @@ p, ol {
     justify-content: space-between !important;
     align-items: flex-end !important;
     display: flex !important;
-    height: 680px !important;
+    height: 640px !important;
     opacity: 0.9 !important;
 }
 .notion-collection-card:hover {
