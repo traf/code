@@ -1,4 +1,7 @@
 * {
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeSpeed !important;
+    font-weight: normal !important;
     outline: none !important;
     border: none !important;
 }
@@ -11,7 +14,7 @@
     --color-bg-default: #000 !important;
     --color-primary: #06f !important;
 
-    --container-lg: 1320px !important;
+    --container-lg: 1360px !important;
     --container-md: 1040px !important;
 
     --rounded-md: 4px !important;
