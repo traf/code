@@ -150,6 +150,10 @@ p, ol {
 }
 
 /* Home page styles */
+#page-index .super-content {
+    margin-top: 400px !important;
+}
+
 #page-index .notion-header {
     display: none !important;
 }
@@ -246,7 +250,8 @@ p, ol {
 
 /* Mobile */
 @media (max-width: 680px) {
-    .super-content {
+    .notion-header,
+    #page-index .super-content {
         margin-top: 300px !important;
     }
     .nav {
