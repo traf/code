@@ -6,6 +6,12 @@
     border: none !important;
 }
 
+@font-face {
+    font-family: 'space';
+    src:  url('https://code.tr.af/traf/assets/space.woff') format('woff'),
+          url('https://code.tr.af/traf/assets/space.ttf') format('truetype');
+}
+
 :root {
     --color-text-default-light: #8F9BA8 !important;
     --color-border-default: #1b1f23 !important;
@@ -25,7 +31,7 @@
 }
 
 .notion-header {
-    margin-top: 420px !important;
+    margin: 420px 0 80px !important;
 }
 
 .notion-image img {
@@ -54,6 +60,19 @@ h1, h2, h3, p {
     width: var(--container-md) !important;
     margin: 0 auto !important;
     max-width: 90% !important;
+}
+
+h3 {
+    font-size: 24px !important;
+    margin: 24px 0 !important;
+}
+
+p {
+    font-family: 'space', sans-serif !important;
+    color: var(--color-text-gray) !important;
+    font-weight: 100 !important;
+    font-size: 20px !important;
+    line-height: 2 !important;
 }
 
 /* Custom navbar */

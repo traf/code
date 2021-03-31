@@ -6,17 +6,17 @@
     border: none !important;
 }
 
+@font-face {
+    font-family: 'space';
+    src:  url('https://code.tr.af/traf/assets/space.woff') format('woff'),
+          url('https://code.tr.af/traf/assets/space.ttf') format('truetype');
+}
+
 html, body, p {
     font-weight: normal !important;
     font-style: normal !important;
     padding: 0 !important;
     margin: 0 !important;
-}
-
-@font-face {
-    font-family: 'space';
-    src:  url('https://code.tr.af/traf/assets/space.woff') format('woff'),
-          url('https://code.tr.af/traf/assets/space.ttf') format('truetype');
 }
 
 :root {
@@ -29,8 +29,8 @@ html, body, p {
 }
 
 h3 {
-    margin: 12px 0 24px !important;
     font-size: 24px !important;
+    margin: 24px 0 !important;
 }
 
 p {
