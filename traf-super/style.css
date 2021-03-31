@@ -143,7 +143,6 @@
 }
 
 /* Typography */
-
 h1, h2, h3, p {
     width: var(--container-md) !important;
     margin: 0 auto !important;
@@ -185,11 +184,11 @@ p, ol {
     color: var(--color-text-default) !important;
 }
 
-p a {
+.notion-text__content .notion-semantic-string .link {
     color: var(--color-text-default) !important;
 }
 
-p a:hover {
+.notion-text__content .notion-semantic-string .link:hover {
     color: var(--color-text-gray) !important;
 }
 
