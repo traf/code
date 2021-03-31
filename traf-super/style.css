@@ -143,7 +143,7 @@
 }
 
 /* Typography */
-h1, h2, h3, p {
+h1, h2, h3, p, ol {
     width: var(--container-md) !important;
     margin: 0 auto !important;
     max-width: 90% !important;
