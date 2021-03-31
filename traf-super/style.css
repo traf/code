@@ -75,6 +75,14 @@ p {
     line-height: 2 !important;
 }
 
+p a {
+    color: var(--color-text-default) !important;
+}
+
+p a:hover {
+    color: var(--color-text-gray) !important;
+}
+
 /* Custom navbar */
 .nav {
     background: var(--color-bg-black);
