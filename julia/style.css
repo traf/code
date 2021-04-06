@@ -25,7 +25,7 @@
     --font: 'retiro', serif !important;
     --column-spacing: 20px !important;
 
-    --color-green: #b6b2a5 !important;
+    --color-green: #b4b2a2 !important;
     --color-red: #a17163 !important;
 }
 
@@ -76,6 +76,7 @@
 }
 
 .super-footer-links a {
+    font-size: 18px !important;
     text-decoration: none;
     padding: 0 20px;
     color: #fff;
