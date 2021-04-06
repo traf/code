@@ -5,6 +5,10 @@
     outline: none !important;
 }
 
+:root {
+    --column-spacing: 20px !important;
+}
+
 @font-face {
     font-family: 'retiro';
     src:  url('https://code.tr.af/julia/assets/retiro.woff') format('woff'),
@@ -37,6 +41,7 @@ h1 {
 
 .notion-callout {
     position: relative !important;
+    min-height: 42px !important;
     border: none !important;
     padding: 0 !important;
 }
@@ -49,6 +54,7 @@ h1 {
     border: 1px solid rgba(255,255,255,0.4) !important;
     position: absolute !important;
     padding: 8px 12px !important;
+    opacity: 1 !important;
     bottom: 0 !important;
     right: 0 !important;
     left: 0 !important;
