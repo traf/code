@@ -46,6 +46,10 @@ h1 {
     line-height: 1.4 !important;
 }
 
+#page-index .notion-header__cover {
+    height: 160px !important;
+}
+
 .notion-header__cover-image {
     position: fixed !important;
 }
