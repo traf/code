@@ -3,13 +3,16 @@
     text-rendering: optimizeSpeed !important;
     font-weight: normal !important;
     outline: none !important;
-    border: none !important;
 }
 
 @font-face {
     font-family: 'retiro';
     src:  url('https://code.tr.af/julia/assets/retiro.woff') format('woff'),
           url('https://code.tr.af/julia/assets/retiro.ttf') format('truetype');
+}
+
+.notion-callout__icon {
+    display: none !important;
 }
 
 h1 {
