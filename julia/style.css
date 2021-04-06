@@ -1,13 +1,14 @@
+/*—————————————————————————————————————————————*/
+/*———————————— JULIA K CRIST WEBSITE ——————————*/
+/*————————————— POWERED BY SUPER.SO ———————————*/
+/*——————————————— BUILT BY @TRAF ——————————————*/
+/*—————————————————————————————————————————————*/
+
 * {
     -webkit-font-smoothing: antialiased !important;
     text-rendering: optimizeSpeed !important;
     font-weight: normal !important;
     outline: none !important;
-}
-
-:root {
-    --column-spacing: 20px !important;
-    --color-red: #A17163 !important;
 }
 
 @font-face {
@@ -16,18 +17,39 @@
           url('https://code.tr.af/julia/assets/retiro.ttf') format('truetype');
 }
 
-.max-width {
-    max-width: 800px !important;
+/*—————————————————————————————————————————————*/
+/*—————————————————— VARIABLES ————————————————*/
+/*—————————————————————————————————————————————*/
+
+:root {
+    --column-spacing: 20px !important;
+    --color-red: #A17163 !important;
 }
+
+/*—————————————————————————————————————————————*/
+/*——————————————— HIDDEN ELEMENTS —————————————*/
+/*—————————————————————————————————————————————*/
 
 .notion-callout__icon {
     display: none !important;
+}
+
+/*—————————————————————————————————————————————*/
+/*———————————————— NOTION BLOCKS ——————————————*/
+/*—————————————————————————————————————————————*/
+
+.max-width {
+    max-width: 800px !important;
 }
 
 .notion-navbar {
     background: rgba(255,255,255,0.2) !important;
     backdrop-filter: blur(20px) !important;
 }
+
+/*—————————————————————————————————————————————*/
+/*————————————————— TYPOGRAPHY ————————————————*/
+/*—————————————————————————————————————————————*/
 
 h1 {
     font-family: 'retiro', serif !important;
@@ -36,27 +58,13 @@ h1 {
     line-height: 1 !important;
 }
 
-#page-index {
-    text-align: center !important;
-    color: #fff !important;
-}
-
-#page-index h1 {
-    transform: scale(1.4) !important;
-    line-height: 1.4 !important;
-}
-
-#page-index .notion-header__cover {
-    height: 160px !important;
-}
-
-.notion-header__cover-image {
-    position: fixed !important;
-}
+/*—————————————————————————————————————————————*/
+/*—————————————— CALLOUT BUTTONS ——————————————*/
+/*—————————————————————————————————————————————*/
 
 .notion-callout {
     position: relative !important;
-    min-height: 46px !important;
+    min-height: 44px !important;
     border: none !important;
     padding: 0 !important;
 }
@@ -85,4 +93,26 @@ h1 {
 .notion-callout a:hover {
     box-shadow: 0 10px 20px -10px rgb(161,113,99,0.1) !important;
     background: rgba(255,255,255,0.4) !important;
+}
+
+/*—————————————————————————————————————————————*/
+/*—————————————— HOME PAGE STUFF ——————————————*/
+/*—————————————————————————————————————————————*/
+
+#page-index {
+    text-align: center !important;
+    color: #fff !important;
+}
+
+#page-index h1 {
+    transform: scale(1.4) !important;
+    line-height: 1.4 !important;
+}
+
+#page-index .notion-header__cover {
+    height: 160px !important;
+}
+
+#page-index .notion-header__cover-image {
+    position: fixed !important;
 }
