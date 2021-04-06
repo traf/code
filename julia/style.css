@@ -22,6 +22,7 @@
 
 h1 {
     font-family: 'retiro', serif !important;
+    pointer-events: none !important;
     font-size: 140px !important;
 }
 
