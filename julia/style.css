@@ -15,6 +15,11 @@
     display: none !important;
 }
 
+.notion-navbar {
+    background: rgba(255,255,255,0.2) !important;
+    backdrop-filter: blur(20px) !important;
+}
+
 h1 {
     font-family: 'retiro', serif !important;
     font-size: 140px !important;
