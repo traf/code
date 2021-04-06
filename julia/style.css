@@ -15,6 +15,10 @@
           url('https://code.tr.af/julia/assets/retiro.ttf') format('truetype');
 }
 
+.max-width {
+    max-width: 720px !important;
+}
+
 .notion-callout__icon {
     display: none !important;
 }
@@ -28,6 +32,7 @@ h1 {
     font-family: 'retiro', serif !important;
     pointer-events: none !important;
     font-size: 140px !important;
+    line-height: 1 !important;
 }
 
 #page-index {
