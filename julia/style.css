@@ -7,6 +7,7 @@
 
 :root {
     --column-spacing: 20px !important;
+    --color-red: #A17163 !important;
 }
 
 @font-face {
@@ -60,10 +61,14 @@ h1 {
 }
 
 .notion-callout a {
-    border: 1px solid rgba(255,255,255,0.4) !important;
+    background: rgba(255,255,255,0.2) !important;
+    backdrop-filter: blur(8px) !important;
+    color: var(--color-red) !important;
+    border-radius: 100px !important;
     position: absolute !important;
     padding: 8px 12px !important;
     font-size: 18px !important;
+    border: none !important;
     opacity: 1 !important;
     bottom: 0 !important;
     right: 0 !important;
@@ -72,5 +77,6 @@ h1 {
 }
 
 .notion-callout a:hover {
-    border: 1px solid #fff !important;
+    box-shadow: 0 10px 20px -10px rgb(161,113,99,0.1) !important;
+    background: rgba(255,255,255,0.2) !important;
 }
