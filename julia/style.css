@@ -33,7 +33,7 @@ h1 {
     font-family: 'retiro', serif !important;
     pointer-events: none !important;
     font-size: 120px !important;
-    line-height: 1.1 !important;
+    line-height: 1 !important;
 }
 
 #page-index {
@@ -43,6 +43,7 @@ h1 {
 
 #page-index h1 {
     transform: scale(1.4) !important;
+    line-height: 1.4 !important;
 }
 
 .notion-header__cover-image {
