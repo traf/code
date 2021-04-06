@@ -22,6 +22,7 @@
 /*—————————————————————————————————————————————*/
 
 :root {
+    --font: 'retiro', serif !important;
     --column-spacing: 20px !important;
     --color-red: #A17163 !important;
 }
@@ -52,7 +53,7 @@
 /*—————————————————————————————————————————————*/
 
 h1 {
-    font-family: 'retiro', serif !important;
+    font-family: var(--font) !important;
     pointer-events: none !important;
     font-size: 120px !important;
     line-height: 1 !important;
