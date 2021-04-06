@@ -16,7 +16,7 @@
 }
 
 .max-width {
-    max-width: 720px !important;
+    max-width: 800px !important;
 }
 
 .notion-callout__icon {
@@ -41,7 +41,7 @@ h1 {
 }
 
 #page-index h1 {
-    transform: scale(1.2) !important;
+    transform: scale(1.4) !important;
 }
 
 .notion-header__cover-image {
