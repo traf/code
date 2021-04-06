@@ -67,6 +67,7 @@ h1 {
 
 .notion-callout a {
     background: rgba(255,255,255,0.2) !important;
+    transition: all .2s ease-in-out !important;
     backdrop-filter: blur(8px) !important;
     color: var(--color-red) !important;
     border-radius: 100px !important;
@@ -83,5 +84,5 @@ h1 {
 
 .notion-callout a:hover {
     box-shadow: 0 10px 20px -10px rgb(161,113,99,0.1) !important;
-    background: rgba(255,255,255,0.2) !important;
+    background: rgba(255,255,255,0.4) !important;
 }
