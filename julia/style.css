@@ -31,7 +31,7 @@
 h1 {
     font-family: 'retiro', serif !important;
     pointer-events: none !important;
-    font-size: 140px !important;
+    font-size: 120px !important;
     line-height: 1 !important;
 }
 
@@ -40,13 +40,17 @@ h1 {
     color: #fff !important;
 }
 
+#page-index h1 {
+    transform: scale(1.2) !important;
+}
+
 .notion-header__cover-image {
     position: fixed !important;
 }
 
 .notion-callout {
     position: relative !important;
-    min-height: 42px !important;
+    min-height: 46px !important;
     border: none !important;
     padding: 0 !important;
 }
@@ -59,6 +63,7 @@ h1 {
     border: 1px solid rgba(255,255,255,0.4) !important;
     position: absolute !important;
     padding: 8px 12px !important;
+    font-size: 18px !important;
     opacity: 1 !important;
     bottom: 0 !important;
     right: 0 !important;
