@@ -1,38 +1,12 @@
 .notion-navbar {
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4) !important;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1) !important;
     padding-right: var(--padding-right) !important;
     padding-left: var(--padding-left) !important;
+    background: var(--color-white) !important;
     height: var(--navbar-height) !important;
-    background: rgba(0,0,0,0.9) !important;
-    position: fixed !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    -moz-backdrop-filter: blur(20px) !important;
-    backdrop-filter: blur(20px) !important;
-}
-
-.notion-breadcrumb__divider,
-.notion-breadcrumb__item  {
-    display: none !important;
-}
-
-.notion-navbar a[href="/"] {
-    display: flex !important;
+    position: relative !important;
 }
 
 .notion-navbar>a:hover {
     background: none !important;
-}
-
-.notion-navbar__title {
-    overflow: visible !important;
-    font-size: 24px !important;
-}
-
-@media (max-width: 600px) {
-
-    .notion-navbar {
-        height: 120px !important;
-        padding-bottom: 50px !important;
-    }
-
 }

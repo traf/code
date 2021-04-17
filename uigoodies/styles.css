@@ -10,3 +10,7 @@
 @import "navbar.css";
 @import "quote.css";
 @import "typography.css";
+
+#page-index .notion-header {
+    display: none !important;
+}
