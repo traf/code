@@ -20,6 +20,7 @@
 
 /* Callout bar */
 #block-8856589a33044d7cbdb463a4bf4ae36b {
+    background: var(--color-primary) !important;
     justify-content: center !important;
     align-items: center !important;
     position: sticky !important;
