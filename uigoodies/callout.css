@@ -1,9 +1,9 @@
 .notion-callout {
     background: var(--color-white) !important;
     transition: var(--transition) !important;
-    transform: scale(0.98) !important;
+    transform: scale(0.96) !important;
     border-radius: 100px !important;
-    padding: 0 0 0 24px !important;
+    padding: 0 0 0 20px !important;
     width: fit-content !important;
     position: relative !important;
     min-height: 44px !important;
@@ -33,7 +33,7 @@
 .notion-callout .notion-semantic-string .link {
     color: var(--color-primary) !important;
     justify-content: center !important;
-    padding: 0 30px 0 10px !important;
+    padding: 0 24px 0 8px !important;
     border-radius: 100px !important;
     align-items: center !important;
     position: relative !important;
