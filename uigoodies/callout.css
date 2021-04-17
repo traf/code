@@ -2,11 +2,11 @@
     background: var(--color-white) !important;
     transition: var(--transition) !important;
     border-radius: 100px !important;
+    padding: 0 0 0 20px !important;
     width: fit-content !important;
     position: relative !important;
     min-height: 60px !important;
     border: none !important;
-    padding: 0 !important;
 }
 
 .notion-callout:hover {
@@ -19,18 +19,19 @@
 
 .notion-callout__icon img {
     object-fit: contain !important;
+    min-height: 80% !important;
 }
 
 .notion-callout .notion-semantic-string .link {
     color: var(--color-primary) !important;
     justify-content: center !important;
+    padding: 0 30px 0 12px !important;
     border-radius: 100px !important;
     align-items: center !important;
     width: fit-content !important;
     font-weight: 500 !important;
     min-height: 60px !important;
     font-size: 16px !important;
-    padding: 0 30px !important;
     display: flex !important;
     border: none !important;
 }
