@@ -1,16 +1,18 @@
 .notion-callout {
     background: var(--color-white) !important;
     transition: var(--transition) !important;
+    transform: scale(0.98) !important;
     border-radius: 100px !important;
     padding: 0 0 0 24px !important;
     width: fit-content !important;
     position: relative !important;
     min-height: 50px !important;
+    margin: 0 8px !important;
     border: none !important;
 }
 
 .notion-callout:hover {
-    transform: scale(1.02) !important;
+    transform: scale(1) !important;
 }
 
 .notion-callout__content {

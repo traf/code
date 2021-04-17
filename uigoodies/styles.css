@@ -23,11 +23,13 @@
 
 /* Callout bar */
 #block-8856589a33044d7cbdb463a4bf4ae36b {
+    margin-left: calc(var(--padding-left) * -1) !important;
     background: var(--color-primary) !important;
     justify-content: center !important;
     align-items: center !important;
     position: sticky !important;
     display: flex !important;
+    width: 100vw !important;
     top: 0 !important;
 }
 
