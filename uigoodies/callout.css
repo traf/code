@@ -6,8 +6,8 @@
     padding: 0 0 0 24px !important;
     width: fit-content !important;
     position: relative !important;
-    min-height: 50px !important;
-    margin: 0 8px !important;
+    min-height: 44px !important;
+    margin: 0 6px !important;
     border: none !important;
 }
 
@@ -39,7 +39,7 @@
     position: relative !important;
     width: fit-content !important;
     font-weight: 500 !important;
-    min-height: 50px !important;
+    min-height: 44px !important;
     font-size: 16px !important;
     display: flex !important;
     border: none !important;

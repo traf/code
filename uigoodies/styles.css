@@ -28,6 +28,7 @@
     justify-content: center !important;
     align-items: center !important;
     position: sticky !important;
+    padding: 8px 0 !important;
     display: flex !important;
     width: 100vw !important;
     top: 0 !important;
