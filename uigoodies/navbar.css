@@ -1,10 +1,10 @@
 .notion-navbar {
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1) !important;
     padding-right: var(--padding-right) !important;
     padding-left: var(--padding-left) !important;
     background: var(--color-white) !important;
     height: var(--navbar-height) !important;
     position: relative !important;
+    box-shadow: none !important;
 }
 
 .notion-navbar>a:hover {

@@ -6,11 +6,14 @@
 @import "variables.css";
 @import "callout.css";
 @import "collection.css";
-@import "container.css";
 @import "navbar.css";
 @import "quote.css";
 @import "typography.css";
 
 #page-index .notion-header {
     display: none !important;
+}
+
+.super-content {
+    padding: 60px var(--padding-right) 60px var(--padding-left) !important;
 }
