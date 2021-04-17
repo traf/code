@@ -42,7 +42,10 @@
     top: 0 !important;
 }
 
-#block-8856589a33044d7cbdb463a4bf4ae36b .notion-column {
+#block-8856589a33044d7cbdb463a4bf4ae36b .notion-column,
+#block-92d7812bcf404981aec9e4f846f21b79 .notion-column,
+#block-34a81c40621a41dcb2f1bd3d2938f4ef .notion-column,
+#block-2cdae38c04d540a192194d4da61c89f4 .notion-column {
     width: fit-content !important;
     margin: 0 !important;
 }
