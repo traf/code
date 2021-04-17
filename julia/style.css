@@ -1,8 +1,6 @@
-/*—————————————————————————————————————————————*/
 /*———————————— JULIA K CRIST WEBSITE ——————————*/
 /*————————————— POWERED BY SUPER.SO ———————————*/
 /*——————————————— BUILT BY @TRAF ——————————————*/
-/*—————————————————————————————————————————————*/
 
 * {
     -webkit-font-smoothing: antialiased !important;
@@ -128,6 +126,7 @@ h1 {
     border-radius: 100px !important;
     position: absolute !important;
     padding: 8px 12px !important;
+    font-weight: 600 !important;
     font-size: 18px !important;
     border: none !important;
     opacity: 1 !important;
