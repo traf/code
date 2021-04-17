@@ -4,9 +4,34 @@
 
 @import "reset.css";
 @import "variables.css";
-@import "main.css";
 @import "callout.css";
 @import "collection.css";
 @import "navbar.css";
 @import "quote.css";
 @import "typography.css";
+
+#page-index .notion-header {
+    display: none !important;
+}
+
+.super-content {
+    padding-right: var(--padding-right) !important;
+    padding-left: var(--padding-left) !important;
+    padding-bottom: 60px !important;
+    padding-top: 60px !important;
+}
+
+/* Callout bar */
+#block-8856589a33044d7cbdb463a4bf4ae36b {
+    background: var(--color-primary) !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: sticky !important;
+    display: flex !important;
+    top: 0 !important;
+}
+
+#block-8856589a33044d7cbdb463a4bf4ae36b .notion-column {
+    width: fit-content !important;
+    margin: 0 !important;
+}
