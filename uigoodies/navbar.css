@@ -19,4 +19,5 @@
 
 .notion-breadcrumb__item:first-child:before {
     content: url('https://code.tr.af/uigoodies/assets/icon-heart.svg') !important;
+    margin-right: 6px !important;
 }
