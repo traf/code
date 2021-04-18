@@ -16,3 +16,9 @@
     font-weight: 500 !important;
     font-size: 18px !important;
 }
+
+.notion-breadcrumb__item:first-child:before {
+    content: url('https://code.tr.af/uigoodies/assets/icon-heart.svg') !important;
+    height: 12px !important;
+    width: 12px !important;
+}
