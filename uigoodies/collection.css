@@ -20,9 +20,9 @@
 .notion-collection-card__cover,
 .notion-collection-card__cover div,
 .notion-collection-card__cover img {
-    max-height: 300px !important;
+    max-height: 240px !important;
     border-radius: 4px !important;
-    height: 300px !important;
+    height: 240px !important;
     border: none !important;
 }
 
