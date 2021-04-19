@@ -346,4 +346,19 @@ p, ol {
     h1 { font-size: 30px !important; }
     .notion-collection-card { height: 420px !important; }
     .notion-collection-card__content { display: none !important; }
+    .notion-collection-list__item {
+        justify-content: center !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 30px !important;
+        height: 200px !important;
+    }
+    .notion-collection-list__item .notion-property__title {
+        justify-content: flex-start !important;
+        padding: 0 !important;
+    }
+    .notion-collection-list__item-content {
+        margin-top: 16px !important;
+        padding: 0 !important;
+    }
 }
