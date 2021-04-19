@@ -20,9 +20,18 @@
 .notion-collection-card__cover div,
 .notion-collection-card__cover img {
     max-height: 300px !important;
-    border-radius: 0 !important;
+    border-radius: 4px !important;
     height: 300px !important;
     border: none !important;
+}
+
+.notion-collection-card__cover {
+    box-shadow: 0 10px 40px -10px rgb(0,0,0,0.08) !important;
+    transition: var(--transition) !important;
+}
+
+.notion-collection-card:hover .notion-collection-card__cover {
+    transform: scale(1.04) !important;
 }
 
 .notion-collection__header,
