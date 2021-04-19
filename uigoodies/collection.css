@@ -35,8 +35,9 @@
     padding: 0 !important;
 }
 
-.notion-property__title {
-    margin-top: 16px !important;
+.notion-collection-card .notion-property__title {
+    margin: 16px 0 8px !important;
+    font-size: 20px !important;
 }
 
 .notion-property__title .notion-semantic-string {
@@ -53,7 +54,6 @@
     overflow: hidden !important;
     font-size: 14px !important;
     height: 60px !important;
-    width: 256px !important;
 }
 
 @media (max-width: 600px) {
