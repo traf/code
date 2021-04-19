@@ -48,7 +48,7 @@
     text-overflow: ellipsis !important;
     -webkit-line-clamp: 3 !important;
     display: -webkit-box !important;
-    word-break: normal !important;
+    white-spacE: normal !important;
     line-height: 20px !important;
     overflow: hidden !important;
     font-size: 14px !important;
