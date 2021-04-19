@@ -7,6 +7,7 @@
 .notion-collection-card {
     transition: var(--transition) !important;
     margin-bottom: 20px !important;
+    overflow: visible !important;
     background: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
