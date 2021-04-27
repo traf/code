@@ -21,6 +21,12 @@
     font-family: 'carbon', sans-serif !important;
 }
 
+h1, h2, h3, p {
+    text-transform: uppercase !important;
+    font-weight: normal !important;
+    font-size: 18px !important;
+}
+
 .notion-navbar,
 .notion-toggle {
     display: none !important;
