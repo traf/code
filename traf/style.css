@@ -319,6 +319,11 @@ p, ol {
     padding: 4px 20px !important;
 }
 
+.super-password-protection__error {
+    font-size: 16px !important;
+    margin-top: 12px !important;
+}
+
 /* Mobile */
 @media (max-width: 680px) {
     .notion-header,
