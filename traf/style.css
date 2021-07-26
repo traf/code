@@ -378,4 +378,7 @@ p, ol {
         margin-top: 16px !important;
         padding: 0 !important;
     }
+    .notion-list-item {
+        font-size: 16px !important;
+    }
 }
