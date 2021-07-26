@@ -332,6 +332,10 @@ p, ol {
     color: var(--color-text-gray) !important;
 }
 
+.notion-list-item {
+    font-size: 18px !important;
+}
+
 /* Mobile */
 @media (max-width: 680px) {
     .notion-header,
