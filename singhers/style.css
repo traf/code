@@ -25,7 +25,8 @@
 .notion-navbar,
 .super-navbar__logo,
 .notion-callout__icon,
-#page-index .notion-header__title-wrapper {
+.notion-header__cover,
+#page-index .notion-header {
   display: none !important;
 }
 
@@ -62,9 +63,11 @@
 .notion-header__cover,
 .notion-header__cover>div,
 .notion-header__cover img {
+    margin: 80px auto !important;
     max-height: none !important;
     min-height: auto !important;
-    height: auto !important;
+    height: 520px !important;
+    width: 440px !important;
 }
 
 /*—————————————————————————————————*/
@@ -74,6 +77,9 @@
 h1 {
     color: var(--color-primary) !important;
     font-family: var(--font) !important;
+    letter-spacing: -2px !important;
+    font-weight: 100 !important;
+    font-size: 60px !important;
 }
 
 /*—————————————————————————————————*/
@@ -98,4 +104,9 @@ h1 {
 
 #page-index .super-navbar__item {
     color: var(--color-primary-light) !important;
+}
+
+#page-index .super-content {
+    position: relative !important;
+    top: ;
 }
