@@ -18,7 +18,6 @@
   --font: 'malayalam', serif !important;
 }
 
-
 /*—————————————————————————————————*/
 /*———————— HIDDEN ELEMENTS ————————*/
 /*—————————————————————————————————*/
@@ -61,11 +60,20 @@
 /*—————————————————————————————————*/
 
 .notion-header__cover,
-.notion-header__cover>div
+.notion-header__cover>div,
 .notion-header__cover img {
     max-height: none !important;
     min-height: auto !important;
     height: auto !important;
+}
+
+/*—————————————————————————————————*/
+/*—————————— TYPOGRAPHY ———————————*/
+/*—————————————————————————————————*/
+
+h1 {
+    color: var(--color-primary) !important;
+    font-family: var(--font) !important;
 }
 
 /*—————————————————————————————————*/
