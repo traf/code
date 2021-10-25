@@ -106,6 +106,7 @@ h3 {
 .notion-callout {
   color: var(--color-white) !important;
   position: relative !important;
+  width: fit-content !important;
   margin: 0 auto !important;
   padding: 0 !important;
 }
