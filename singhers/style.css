@@ -26,7 +26,8 @@
 .super-navbar__logo,
 .notion-callout__icon,
 .notion-header__cover,
-#page-index .notion-header {
+#page-index .notion-header,
+#page-index .notion-toggle {
   display: none !important;
 }
 
