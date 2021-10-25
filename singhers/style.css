@@ -36,7 +36,7 @@
 
 .super-content {
     padding-bottom: 40px !important;
-    padding-top: 80px !important;
+    padding-top: 60px !important;
 }
 
 /*—————————————————————————————————*/
@@ -105,6 +105,23 @@ h3 {
 
 .notion-callout {
   color: var(--color-white) !important;
+  position: relative !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.notion-callout__content {
+    margin: 0 !important;
+}
+
+.notion-callout a {
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    padding: 16px ​24px !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    display: block !important;
+    border: none !important;
 }
 
 /*—————————————————————————————————*/
@@ -125,6 +142,6 @@ h3 {
 
 #page-index .notion-image {
     position: relative !important;
-    margin-top: -160px !important;
+    margin-top: -150px !important;
     z-index: -1 !important;
 }
