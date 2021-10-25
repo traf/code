@@ -1,0 +1,93 @@
+/*—————————————————————————————————*/
+/*———————— THEME VARIABLES ————————*/
+/*—————————————————————————————————*/
+
+@font-face {
+    font-family: 'malayalam';
+    src:  url('https://code.tr.af/singhers/assets/malayalam.woff') format('woff'),
+          url('https://code.tr.af/singhers/assets/malayalam.ttf') format('truetype');
+}
+
+:root {
+  --color-primary: #75837A !important;
+  --color-primary-light: #9BA09D !important;
+  --color-white: #fff !important;
+  --color-bg-default: #FEFCF8 !important;
+  --color-bg-green-light: var(--color-primary) !important;
+  --color-bg-green: var(--color-primary) !important;
+  --font: 'malayalam', serif !important;
+}
+
+
+/*—————————————————————————————————*/
+/*———————— HIDDEN ELEMENTS ————————*/
+/*—————————————————————————————————*/
+
+.notion-navbar,
+.super-navbar__logo,
+.notion-callout__icon,
+#page-index .notion-header__title-wrapper {
+  display: none !important;
+}
+
+/*—————————————————————————————————*/
+/*————————————— NAVBAR ————————————*/
+/*—————————————————————————————————*/
+
+.super-navbar {
+  background: var(--color-primary) !important;
+  color: var(--color-white) !important;
+  height: 80px !important;
+}
+
+.super-navbar__content {
+  justify-content: center !important;
+  padding: 0 !important;
+}
+
+.super-navbar__item {
+  opacity: 1 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-size: 12px;
+}
+
+.super-navbar__item:hover {
+  opacity: 0.6 !important;
+}
+
+/*—————————————————————————————————*/
+/*———————————— HEADER —————————————*/
+/*—————————————————————————————————*/
+
+.notion-header__cover,
+.notion-header__cover>div
+.notion-header__cover img {
+    max-height: none !important;
+    min-height: auto !important;
+    height: auto !important;
+}
+
+/*—————————————————————————————————*/
+/*———————— CALLOUT BLOCKS —————————*/
+/*—————————————————————————————————*/
+
+.notion-callout {
+  color: var(--color-white) !important;
+}
+
+/*—————————————————————————————————*/
+/*———————— HOME PAGE STYLES ———————*/
+/*—————————————————————————————————*/
+
+#page-index * {
+    text-align: center !important;
+}
+
+#page-index .super-navbar {
+    background: var(--color-bg-default) !important;
+}
+
+#page-index .super-navbar__item {
+    color: var(--color-primary-light) !important;
+}
