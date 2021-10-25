@@ -35,8 +35,8 @@
 /*—————————————————————————————————*/
 
 .super-content {
-    padding-bottom: 60px !important;
-    padding-top: 120px !important;
+    padding-bottom: 40px !important;
+    padding-top: 80px !important;
 }
 
 /*—————————————————————————————————*/
@@ -125,6 +125,6 @@ h3 {
 
 #page-index .notion-image {
     position: relative !important;
-    margin-top: -140px !important;
+    margin-top: -160px !important;
     z-index: -1 !important;
 }
