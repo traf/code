@@ -166,7 +166,7 @@ h3 {
 }
 
 #page-index .notion-image:after {
-    content: "url('https://code.tr.af/singhers/assets/badge.svg')" !important;
+    content: url('https://code.tr.af/singhers/assets/badge.svg') !important;
     position: absolute !important;
 }
 
