@@ -63,9 +63,9 @@
     background: url('https://code.tr.af/singhers/assets/badge.png') !important;
     background-size: cover !important;
     position: absolute !important;
-    bottom: -90px !important;
     height: 150px !important;
-    right: -120px !important;
+    bottom: 24px !important;
+    right: 150px !important;
     width: 150px !important;
     content: "" !important;
 }
