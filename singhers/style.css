@@ -106,11 +106,17 @@ h3 {
 /*—————————————————————————————————*/
 
 .notion-callout {
-  color: var(--color-white) !important;
-  position: relative !important;
-  width: fit-content !important;
-  margin: 0 auto !important;
-  padding: 0 !important;
+    transition: all .2s ease-in-out !important;
+    color: var(--color-white) !important;
+    position: relative !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.notion-callout:hover {
+    opacity: 0.6 !important;
 }
 
 .notion-callout__content {
@@ -119,12 +125,13 @@ h3 {
 
 .notion-callout a {
     text-transform: uppercase !important;
-    letter-spacing: 2px !important;
-    padding: 16px 24px !important;
+    letter-spacing: 1px !important;
+    padding: 16px 28px !important;
     font-weight: 500 !important;
     font-size: 12px !important;
     display: block !important;
     border: none !important;
+    opacity: 1 !important;
 }
 
 /*—————————————————————————————————*/
