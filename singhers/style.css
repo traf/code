@@ -139,6 +139,7 @@ h3 {
 /*—————————————————————————————————*/
 
 .notion-callout {
+    color: var(--color-text-default) !important;
     transition: all .2s ease-in-out !important;
     position: relative !important;
     border-radius: 0 !important;
