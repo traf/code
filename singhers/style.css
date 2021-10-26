@@ -12,6 +12,7 @@
   --color-primary: #75837A !important;
   --color-primary-light: #9BA09D !important;
   --color-white: #fff !important;
+  --color-text-default: #303431 !important;
   --color-bg-default: #FEFCF8 !important;
   --color-bg-green-light: var(--color-primary) !important;
   --color-bg-green: var(--color-primary) !important;
@@ -146,4 +147,8 @@ h3 {
     position: relative !important;
     margin-top: -150px !important;
     z-index: -1 !important;
+}
+
+#page-index .notion-text {
+    min-height: 24px !important;
 }
