@@ -37,7 +37,7 @@
 /*—————————————————————————————————*/
 
 .super-content {
-    padding: 60px 0 40px !important;
+    padding: 0 0 40px !important;
     max-width: none !important;
 }
 
@@ -139,6 +139,7 @@ h3 {
 /*—————————————————————————————————*/
 
 .notion-column {
+    padding: 0 !important;
     margin: 0 !important;
     flex: 1 !important;
 }
@@ -149,6 +150,10 @@ h3 {
 
 #page-index * {
     text-align: center !important;
+}
+
+#page-index .super-content {
+    padding: 60px 0 40px !important;
 }
 
 #page-index .super-navbar {
