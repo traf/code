@@ -138,6 +138,10 @@ h3 {
 /*———————— CALLOUT BLOCKS —————————*/
 /*—————————————————————————————————*/
 
+.notion-callout.bg-green-light {
+    color: var(--color-white) !important;
+}
+
 .notion-callout {
     color: var(--color-text-default) !important;
     transition: all .2s ease-in-out !important;
@@ -147,10 +151,6 @@ h3 {
     margin: 0 auto !important;
     border: none !important;
     width: 100% !important;
-}
-
-.notion-callout.bg-green-light {
-    color: var(--color-white) !important;
 }
 
 .notion-callout h3 {
