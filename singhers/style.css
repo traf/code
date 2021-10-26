@@ -9,14 +9,14 @@
 }
 
 :root {
-  --color-primary: #75837A !important;
-  --color-primary-light: #9BA09D !important;
-  --color-white: #fff !important;
-  --color-text-default: #303431 !important;
-  --color-bg-default: #FEFCF8 !important;
-  --color-bg-green-light: var(--color-primary) !important;
-  --color-bg-green: var(--color-primary) !important;
-  --font: 'malayalam', serif !important;
+    --color-primary: #75837A !important;
+    --color-primary-light: #9BA09D !important;
+    --color-white: #fff !important;
+    --color-text-default: #303431 !important;
+    --color-bg-default: #FEFCF8 !important;
+    --color-bg-green-light: var(--color-primary) !important;
+    --color-bg-green: var(--color-primary) !important;
+    --font: 'malayalam', serif !important;
 }
 
 /*—————————————————————————————————*/
@@ -29,7 +29,7 @@
 .notion-header__cover,
 #page-index .notion-header,
 #page-index .notion-toggle {
-  display: none !important;
+    display: none !important;
 }
 
 /*—————————————————————————————————*/
@@ -46,25 +46,25 @@
 /*—————————————————————————————————*/
 
 .super-navbar {
-  background: var(--color-primary) !important;
-  color: var(--color-white) !important;
-  height: 80px !important;
+    background: var(--color-primary) !important;
+    color: var(--color-white) !important;
+    height: 80px !important;
 }
 
 .super-navbar__content {
-  justify-content: center !important;
-  padding: 0 !important;
+    justify-content: center !important;
+    padding: 0 !important;
 }
 
 .super-navbar__item {
-  opacity: 1 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 1px !important;
-  font-size: 12px;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    opacity: 1 !important;
+    font-size: 12px;
 }
 
 .super-navbar__item:hover {
-  opacity: 0.6 !important;
+    color: var(--color-primary) !important;
 }
 
 /*—————————————————————————————————*/
