@@ -59,26 +59,13 @@
 .super-navbar__item {
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
+    font-size: 12px !important;
     opacity: 1 !important;
-    font-size: 12px;
 }
 
 .super-navbar__item:hover {
     color: var(--color-primary) !important;
-}
-
-/*—————————————————————————————————*/
-/*———————————— HEADER —————————————*/
-/*—————————————————————————————————*/
-
-.notion-header__cover,
-.notion-header__cover>div,
-.notion-header__cover img {
-    margin: 80px auto !important;
-    max-height: none !important;
-    min-height: auto !important;
-    height: 520px !important;
-    width: 440px !important;
+    opacity: 1 !important;
 }
 
 /*—————————————————————————————————*/
