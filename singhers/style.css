@@ -110,6 +110,7 @@ h3 {
     color: var(--color-white) !important;
     position: relative !important;
     width: fit-content !important;
+    border-radius: 0 !important;
     margin: 0 auto !important;
     border: none !important;
     padding: 0 !important;
