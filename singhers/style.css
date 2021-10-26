@@ -138,6 +138,7 @@ h3 {
 /*—————————————————————————————————*/
 
 .notion-column {
+    margin: 0 !important;
     flex: 1 !important;
 }
 
