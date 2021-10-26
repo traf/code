@@ -13,6 +13,7 @@
     --color-primary-light: #9BA09D !important;
     --color-white: #fff !important;
     --color-text-default: #303431 !important;
+    --color-text-green: var(--color-primary) !important;
     --color-bg-default: #FEFCF8 !important;
     --color-bg-green-light: var(--color-primary) !important;
     --color-bg-green: var(--color-primary) !important;
