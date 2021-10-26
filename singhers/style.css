@@ -166,8 +166,12 @@ h3 {
 }
 
 #page-index .notion-image:after {
-    content: url('https://code.tr.af/singhers/assets/badge.svg') !important;
+    background: url('https://code.tr.af/singhers/assets/badge.svg') !important;
+    background-size: cover !important;
     position: absolute !important;
+    height: 150px !important;
+    width: 150px !important;
+    content: "" !important;
 }
 
 #page-index .notion-text {
