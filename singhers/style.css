@@ -139,6 +139,7 @@ h3 {
     border-radius: 0 !important;
     padding: 120px !important;
     margin: 0 auto !important;
+    height: 100% !important;
     border: none !important;
     width: 100% !important;
 }
