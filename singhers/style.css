@@ -33,12 +33,25 @@
 }
 
 /*—————————————————————————————————*/
-/*———————————— CONTENT ————————————*/
+/*———— CONTENT & COMMON BLOCKS ————*/
 /*—————————————————————————————————*/
 
 .super-content {
-    padding-bottom: 40px !important;
-    padding-top: 60px !important;
+    padding: 60px 0 40px 0 !important;
+    max-width: none !important;
+}
+
+.notion-image {
+    margin: 0 !important;
+}
+
+/*—————————————————————————————————*/
+/*————————————— HEADER ————————————*/
+/*—————————————————————————————————*/
+
+.notion-header {
+    text-align: center !important;
+    padding: 140px 0 !important;
 }
 
 /*—————————————————————————————————*/
@@ -64,8 +77,7 @@
 }
 
 .super-navbar__item:hover {
-    color: var(--color-primary) !important;
-    opacity: 1 !important;
+    opacity: 0.6 !important;
 }
 
 /*—————————————————————————————————*/
@@ -77,7 +89,6 @@ h1 {
     font-family: var(--font) !important;
     letter-spacing: -1.5px !important;
     font-weight: 100 !important;
-    margin-top: 20px !important;
     font-size: 60px !important;
 }
 
@@ -96,15 +107,15 @@ h3 {
     transition: all .2s ease-in-out !important;
     color: var(--color-white) !important;
     position: relative !important;
-    width: fit-content !important;
     border-radius: 0 !important;
+    padding: 120px !important;
     margin: 0 auto !important;
     border: none !important;
-    padding: 0 !important;
+    width: 100% !important;
 }
 
-.notion-callout:hover {
-    opacity: 0.8 !important;
+.notion-callout:hover a {
+    opacity: 0.6 !important;
 }
 
 .notion-callout__content {
@@ -120,6 +131,14 @@ h3 {
     display: block !important;
     border: none !important;
     opacity: 1 !important;
+}
+
+/*—————————————————————————————————*/
+/*———————————— COLUMNS ————————————*/
+/*—————————————————————————————————*/
+
+.notion-column {
+    flex: 1 !important;
 }
 
 /*—————————————————————————————————*/
@@ -147,4 +166,13 @@ h3 {
 
 #page-index .notion-text {
     min-height: 24px !important;
+}
+
+#page-index .notion-callout {
+    width: fit-content !important; 
+    padding: 0 !important;
+}
+
+#page-index h1 {
+    margin-top: 20px !important;
 }
