@@ -51,7 +51,27 @@
 
 .notion-header {
     text-align: center !important;
-    padding: 140px 0 !important;
+    padding: 200px 0 !important;
+    margin: 0 !important;
+}
+
+.notion-header__title {
+    position: relative !important;
+}
+
+.notion-header__title:after {
+    background: url('https://code.tr.af/singhers/assets/badge.png') !important;
+    background-size: cover !important;
+    position: absolute !important;
+    bottom: -90px !important;
+    height: 150px !important;
+    right: -120px !important;
+    width: 150px !important;
+    content: "" !important;
+}
+
+.notion-header__title-wrapper {
+    margin: 0 !important;
 }
 
 /*—————————————————————————————————*/
