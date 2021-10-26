@@ -37,7 +37,7 @@
 /*—————————————————————————————————*/
 
 .super-content {
-    padding: 60px 0 40px 0 !important;
+    padding: 60px 10% 40px !important;
     max-width: none !important;
 }
 
@@ -73,6 +73,7 @@
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
     font-size: 12px !important;
+    padding: 0 30px !important;
     opacity: 1 !important;
 }
 
@@ -169,7 +170,9 @@ h3 {
     background: url('https://code.tr.af/singhers/assets/badge.png') !important;
     background-size: cover !important;
     position: absolute !important;
+    bottom: -90px !important;
     height: 150px !important;
+    right: -120px !important;
     width: 150px !important;
     content: "" !important;
 }
