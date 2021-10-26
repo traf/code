@@ -50,8 +50,8 @@
 /*—————————————————————————————————*/
 
 .notion-header {
+    padding: 240px 0 200px !important;
     text-align: center !important;
-    padding: 200px 0 !important;
     margin: 0 !important;
 }
 
