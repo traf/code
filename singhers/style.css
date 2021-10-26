@@ -115,10 +115,11 @@
 }
 
 .super-navbar__cta {
+    background: rgba(255,255,255,0.12) !important;
+    text-transform: uppercase !important;
     letter-spacing: 1px !important;
     padding: 12px 16px !important;
     border-radius: 0 !important;
-    font-size: 12px !important;
     font-size: 12px !important;
 }
 
@@ -229,6 +230,10 @@ h3 {
 
 #page-index .super-navbar__item {
     color: var(--color-primary-light) !important;
+}
+
+#page-index .super-navbar__cta {
+    background: var(--color-primary-light) !important;
 }
 
 #page-index .notion-image {
