@@ -75,7 +75,7 @@
 h1 {
     color: var(--color-primary) !important;
     font-family: var(--font) !important;
-    letter-spacing: -2px !important;
+    letter-spacing: -1.5px !important;
     font-weight: 100 !important;
     margin-top: 20px !important;
     font-size: 60px !important;
@@ -104,7 +104,7 @@ h3 {
 }
 
 .notion-callout:hover {
-    opacity: 0.6 !important;
+    opacity: 0.8 !important;
 }
 
 .notion-callout__content {
