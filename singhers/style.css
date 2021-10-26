@@ -114,6 +114,13 @@ h1 {
     font-size: 60px !important;
 }
 
+h1 {
+    font-family: var(--font) !important;
+    letter-spacing: -1px !important;
+    font-weight: 100 !important;
+    font-size: 42px !important;
+}
+
 h3 {
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
@@ -134,6 +141,11 @@ h3 {
     margin: 0 auto !important;
     border: none !important;
     width: 100% !important;
+}
+
+.notion-callout h3 {
+    margin: 20px 0 4px !important;
+    opacity: 0.4 !important;
 }
 
 .notion-callout:hover a {
