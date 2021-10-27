@@ -9,15 +9,34 @@
 }
 
 :root {
-    --color-primary: #75837A !important;
-    --color-primary-light: #9BA09D !important;
+    --color-primary: #75837a !important;
+    --color-primary-light: #9ba09d !important;
     --color-white: #fff !important;
     --color-text-default: #303431 !important;
     --color-text-green: var(--color-primary) !important;
-    --color-bg-default: #FEFCF8 !important;
+    --color-bg-default: #fefcf8 !important;
     --color-bg-green-light: var(--color-primary) !important;
     --color-bg-green: var(--color-primary) !important;
     --font: 'malayalam', serif !important;
+}
+
+/*—————————————————————————————————*/
+/*———— CONTENT & COMMON BLOCKS ————*/
+/*—————————————————————————————————*/
+
+body {
+    -webkit-animation: fadeIn 1s !important;
+    -moz-animation: fadeIn 1s !important;
+    animation: fadeIn 1s !important;
+}
+
+@keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-moz-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-webkit-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+.super-content {
+    max-width: none !important;
+    padding: 0 !important;
 }
 
 /*—————————————————————————————————*/
@@ -33,20 +52,25 @@
 }
 
 /*—————————————————————————————————*/
-/*———— CONTENT & COMMON BLOCKS ————*/
+/*————————————— IMAGES ————————————*/
 /*—————————————————————————————————*/
 
-.super-content {
-    padding: 0 0 40px !important;
-    max-width: none !important;
-}
-
 .notion-image {
+    position: relative !important;
     margin: 0 !important;
 }
 
 .notion-image img {
     object-fit: cover !important;
+}
+
+.notion-caption {
+    color: var(--color-white) !important;
+    position: absolute !important;
+    padding: 12px !important;
+    height: auto !important;
+    bottom: 0 !important;
+    right: 0 !important;
 }
 
 /*—————————————————————————————————*/
