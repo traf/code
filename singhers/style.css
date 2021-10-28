@@ -298,7 +298,7 @@ h3 {
 /*—————————————————————————————————*/
 
 #page-our-story .notion-image:after {
-    background: linear-gradient(160deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.604079131652661) 100%);
+    background: linear-gradient(160deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.604079131652661) 100%) !important;
     pointer-events: none !important;
     position: absolute !important;
     content: "" !important;
