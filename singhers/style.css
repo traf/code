@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'malayalam';
-    src:  url('https://code.tr.af/singhers/assets/malayalam.woff') format('woff'),
-          url('https://code.tr.af/singhers/assets/malayalam.ttf') format('truetype');
+    src:  url('https://dl.dropbox.com/s/j0jn9i9yj75otl5/malayalam.woff') format('woff'),
+          url('https://dl.dropbox.com/s/6e82wdhosc5wkhl/malayalam.ttf') format('truetype');
 }
 
 :root {
