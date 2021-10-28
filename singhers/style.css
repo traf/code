@@ -61,6 +61,12 @@ body {
     margin: 0 !important;
 }
 
+.notion-column .notion-image,
+.notion-column .notion-image *,
+.notion-column .notion-callout {
+    height: 100% !important;
+}
+
 .notion-image img {
     object-fit: cover !important;
 }
@@ -68,8 +74,9 @@ body {
 .notion-caption {
     color: var(--color-white) !important;
     position: absolute !important;
-    padding: 12px !important;
+    padding: 20px !important;
     height: auto !important;
+    z-index: 4 !important;
     bottom: 0 !important;
     right: 0 !important;
 }
@@ -227,12 +234,6 @@ h3 {
     flex: 1 !important;
 }
 
-.notion-column .notion-image,
-.notion-column .notion-image *,
-.notion-column .notion-callout {
-    height: 100% !important;
-}
-
 /*—————————————————————————————————*/
 /*———————— HOME PAGE STYLES ———————*/
 /*—————————————————————————————————*/
@@ -290,4 +291,20 @@ h3 {
 
 #page-index h1 {
     margin-top: 20px !important;
+}
+
+/*—————————————————————————————————*/
+/*——————— STORY PAGE STYLES ———————*/
+/*—————————————————————————————————*/
+
+#page-our-story .notion-image:after {
+    background: linear-gradient(160deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.604079131652661) 100%);
+    pointer-events: none !important;
+    position: absolute !important;
+    content: "" !important;
+    z-index: 2 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
 }
