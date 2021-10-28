@@ -175,6 +175,12 @@ h3 {
     font-size: 12px !important;
 }
 
+p strong {
+    font-family: var(--font) !important;
+    font-weight: 100 !important;
+    font-size: 24px !important;
+}
+
 /*—————————————————————————————————*/
 /*———————— CALLOUT BLOCKS —————————*/
 /*—————————————————————————————————*/
@@ -312,13 +318,6 @@ h3 {
     right: 0 !important;
     left: 0 !important;
     top: 0 !important;
-}
-
-#page-our-story p,
-#page-getting-there .notion-callout:first-child p {
-    font-family: var(--font) !important;
-    font-weight: 100 !important;
-    font-size: 24px !important;
 }
 
 #page-our-story .notion-column,
