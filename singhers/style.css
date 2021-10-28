@@ -335,6 +335,10 @@ h3 {
     top: 0 !important;
 }
 
+#page-getting-there .notion-callout .notion-image {
+    margin: 20px 0 !important;
+}
+
 #page-getting-there .notion-callout .notion-image span {
     width: 100% !important;;
 }
