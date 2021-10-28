@@ -205,6 +205,14 @@ p strong {
     opacity: 0.6 !important;
 }
 
+.notion-callout .notion-image {
+    margin: 20px 0 !important;
+}
+
+.notion-callout .notion-image span {
+    width: 100% !important;;
+}
+
 /*—————————————————————————————————*/
 /*———————————— COLUMNS ————————————*/
 /*—————————————————————————————————*/
@@ -328,16 +336,9 @@ p strong {
 }
 
 #page-our-story .notion-column:first-child,
-#page-getting-there .notion-column:first-child {
+#page-getting-there .notion-column:first-child,
+#page-while-there .notion-column:first-child {
     position: sticky !important;
     height: 100vh !important;
     top: 0 !important;
-}
-
-#page-getting-there .notion-callout .notion-image {
-    margin: 20px 0 !important;
-}
-
-#page-getting-there .notion-callout .notion-image span {
-    width: 100% !important;;
 }
