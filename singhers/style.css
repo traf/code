@@ -47,8 +47,7 @@ body {
 .notion-navbar,
 .notion-callout__icon,
 .notion-header__cover,
-#page-index .notion-header,
-#page-index .notion-toggle {
+.notion-property__title__icon-wrapper {
     display: none !important;
 }
 
@@ -243,18 +242,45 @@ p strong {
     text-transform: none !important;
     letter-spacing: 0 !important;
     font-weight: 100 !important;
-    font-size: 24px !important;
+    font-size: 30px !important;
     opacity: 1 !important;
     margin: 0 !important;
 }
 
 .notion-collection-gallery {
+    grid-column-gap: 24px !important;
+    grid-row-gap: 40px !important;
     border: none !important;
+}
+
+.notion-collection-card {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.notion-collection-card__cover,
+.notion-collection-card__cover>div,
+.notion-collection-card__cover img {
+    min-height: auto !important;
+    max-height: none !important;
+    height: 200px !important;
+    border: none !important;
+}
+
+.notion-property__title {
+    font-family: var(--font) !important;
+    padding: 12px 0 0 0 !important;
+    font-size: 18px !important;
 }
 
 /*—————————————————————————————————*/
 /*———————— HOME PAGE STYLES ———————*/
 /*—————————————————————————————————*/
+
+#page-index .notion-header,
+#page-index .notion-toggle {
+    display: none !important;
+}
 
 #page-index * {
     text-align: center !important;
