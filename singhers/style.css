@@ -328,3 +328,9 @@ h3 {
 #page-our-story .notion-column * {
     height: auto !important;
 }
+
+#page-our-story .notion-column:first-child {
+    position: sticky !important;
+    height: 100vh !important;
+    top: 0 !important;
+}
