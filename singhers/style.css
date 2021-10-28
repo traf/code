@@ -199,10 +199,6 @@ h3 {
     opacity: 0.6 !important;
 }
 
-.notion-callout:hover a {
-    opacity: 0.6 !important;
-}
-
 /*—————————————————————————————————*/
 /*———————————— COLUMNS ————————————*/
 /*—————————————————————————————————*/
@@ -292,6 +288,10 @@ h3 {
     display: block !important;
     border: none !important;
     opacity: 1 !important;
+}
+
+#page-index .notion-callout:hover a {
+    opacity: 0.6 !important;
 }
 
 /*—————————————————————————————————*/
