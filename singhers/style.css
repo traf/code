@@ -325,7 +325,9 @@ h3 {
 }
 
 #page-our-story .notion-column,
-#page-our-story .notion-column * {
+#page-our-story .notion-column *,
+#page-getting-there .notion-column,
+#page-getting-there .notion-column * {
     height: auto !important;
 }
 
