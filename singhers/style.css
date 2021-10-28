@@ -415,15 +415,19 @@ h3.notion-collection__header {
     h1 { font-size: 48px !important; }
     
     .super-content { overflow-x: hidden !important; }
-
     .super-navbar__menu { padding: 40px 0 !important; }
-    .super-navbar__button { filter: invert(1) !important; }
     .super-navbar__logo { padding: 0 16px !important; }
     .super-navbar__item {
+        color: var(--color-text-default) !important;
         font-family: var(--font) !important;
         text-transform: none !important;
-        padding: 12px 24px !important;
+        padding: 12px 28px !important;
         letter-spacing: 0 !important;
+        font-size: 24px !important;
+    }
+    .super-navbar__button {
+        filter: invert(1) !important;
+        opacity: 1 !important;
     }
 
     .notion-header { padding: 160px 10% 170px !important; }
@@ -432,7 +436,6 @@ h3.notion-collection__header {
 
     #page-index .super-content { padding: 80px 40px !important; }
     #page-index .super-navbar__button { filter: none !important; }
-
     #page-our-story .notion-column:first-child,
     #page-getting-there .notion-column:first-child,
     #page-while-there .notion-column:first-child,
