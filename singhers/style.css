@@ -200,6 +200,10 @@ p strong {
     width: 100% !important;
 }
 
+.notion-callout__content {
+    width: 100% !important;
+}
+
 .notion-callout h3 {
     margin: 20px 0 4px !important;
     opacity: 0.6 !important;
@@ -228,6 +232,24 @@ p strong {
 .notion-column .notion-image span,
 .notion-column .notion-callout {
     height: 100% !important;
+}
+
+/*—————————————————————————————————*/
+/*——————————— GALLERIES ———————————*/
+/*—————————————————————————————————*/
+
+.notion-collection__header {
+    font-family: var(--font) !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-weight: 100 !important;
+    font-size: 24px !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+}
+
+.notion-collection-gallery {
+    border: none !important;
 }
 
 /*—————————————————————————————————*/
