@@ -334,8 +334,3 @@ h3 {
     height: 100vh !important;
     top: 0 !important;
 }
-
-#page-our-story .notion-column:last-child .notion-image,
-#page-getting-there .notion-column:last-child .notion-image {
-    padding: 80px !important;
-}
