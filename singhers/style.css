@@ -419,12 +419,12 @@ h3.notion-collection__header {
     .super-navbar__menu { padding: 24px 0 !important; }
     .super-navbar__logo { padding: 0 16px !important; }
     .super-navbar__item {
-        color: var(--color-text-default) !important;
+        color: var(--color-text-default-light) !important;
         font-family: var(--font) !important;
         text-transform: none !important;
         padding: 12px 28px !important;
         letter-spacing: 0 !important;
-        font-size: 24px !important;
+        font-size: 20px !important;
     }
     .super-navbar__button { filter: invert(1) !important; opacity: 1 !important; }
     .super-navbar__menu-close { filter: none !important; }
