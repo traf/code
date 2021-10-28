@@ -314,14 +314,11 @@ h3 {
     top: 0 !important;
 }
 
-#page-our-story p {
+#page-our-story p,
+#page-getting-there .notion-callout:first-child p {
     font-family: var(--font) !important;
     font-weight: 100 !important;
     font-size: 24px !important;
-}
-
-#page-our-story p * {
-    font-weight: 100 !important;
 }
 
 #page-our-story .notion-column,
