@@ -415,7 +415,7 @@ h3.notion-collection__header {
     h1 { font-size: 48px !important; }
     
     .super-content { overflow-x: hidden !important; }
-    .super-navbar__menu { padding: 40px 0 !important; }
+    .super-navbar__menu { padding: 24px 0 !important; }
     .super-navbar__logo { padding: 0 16px !important; }
     .super-navbar__item {
         color: var(--color-text-default) !important;
