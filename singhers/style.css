@@ -331,7 +331,7 @@ p strong {
 }
 
 /*—————————————————————————————————*/
-/*——————— STORY PAGE STYLES ———————*/
+/*———————— MISC PAGE STYLES ———————*/
 /*—————————————————————————————————*/
 
 #page-our-story img {
@@ -365,4 +365,12 @@ p strong {
     position: sticky !important;
     height: 100vh !important;
     top: 0 !important;
+}
+
+#page-while-there .notion-collection-card {
+    pointer-events: none !important;
+}
+
+#page-while-there .notion-collection-card a {
+    display: none !important;
 }
