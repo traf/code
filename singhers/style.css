@@ -157,6 +157,7 @@ h1 {
     color: var(--color-primary) !important;
     font-family: var(--font) !important;
     letter-spacing: -1.5px !important;
+    line-height: 1.2 !important;
     font-weight: 100 !important;
     font-size: 60px !important;
 }
@@ -171,6 +172,7 @@ h2 {
 h3 {
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
+    line-height: 1.8 !important;
     font-weight: 500 !important;
     font-size: 14px !important;
 }
@@ -403,3 +405,46 @@ h3.notion-collection__header {
 #page-while-there .notion-collection-card a {
     display: none !important;
 }
+
+/*—————————————————————————————————*/
+/*————————— MOBILE STYLES —————————*/
+/*—————————————————————————————————*/
+
+@media (max-width: 600px) {
+
+    h1 { font-size: 48px !important; }
+    
+    .super-content { overflow-x: hidden !important; }
+
+    .super-navbar__menu { padding: 40px 0 !important; }
+    .super-navbar__button { filter: invert(1) !important; }
+    .super-navbar__logo { padding: 0 16px !important; }
+    .super-navbar__item {
+        font-family: var(--font) !important;
+        text-transform: none !important;
+        padding: 12px 24px !important;
+        letter-spacing: 0 !important;
+    }
+
+    .notion-header { padding: 160px 10% 170px !important; }
+    .notion-column-list { display: block !important; }
+    .notion-callout { padding: 48px !important; }
+
+    #page-index .super-content { padding: 80px 40px !important; }
+    #page-index .super-navbar__button { filter: none !important; }
+
+    #page-our-story .notion-column:first-child,
+    #page-getting-there .notion-column:first-child,
+    #page-while-there .notion-column:first-child,
+    #page-questions .notion-column:first-child {
+        position: static !important;
+        height: auto !important;
+        top: auto !important;
+    }
+    
+
+}
+
+
+
+
