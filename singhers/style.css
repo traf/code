@@ -238,7 +238,7 @@ p strong {
 /*——————————— GALLERIES ———————————*/
 /*—————————————————————————————————*/
 
-.notion-collection__header {
+h3.notion-collection__header {
     font-family: var(--font) !important;
     text-transform: none !important;
     letter-spacing: 0 !important;
@@ -250,7 +250,7 @@ p strong {
 
 .notion-collection-gallery {
     grid-column-gap: 24px !important;
-    grid-row-gap: 40px !important;
+    grid-row-gap: 32px !important;
     border: none !important;
 }
 
@@ -273,6 +273,7 @@ p strong {
     font-family: var(--font) !important;
     padding: 12px 0 0 0 !important;
     font-size: 18px !important;
+    opacity: 1 !important;
 }
 
 /*—————————————————————————————————*/
