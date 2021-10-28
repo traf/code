@@ -334,3 +334,7 @@ h3 {
     height: 100vh !important;
     top: 0 !important;
 }
+
+#page-getting-there .notion-callout .notion-image span {
+    width: 100% !important;;
+}
