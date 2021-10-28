@@ -298,10 +298,6 @@ h3 {
 /*——————— STORY PAGE STYLES ———————*/
 /*—————————————————————————————————*/
 
-#page-our-story img {
-    min-height: 280px !important;
-}
-
 #page-our-story .notion-image:after {
     background: linear-gradient(160deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.604079131652661) 100%) !important;
     pointer-events: none !important;
