@@ -202,6 +202,7 @@ p strong {
 
 .notion-callout__content {
     width: 100% !important;
+    margin: 0 !important;
 }
 
 .notion-callout h3 {
@@ -340,10 +341,6 @@ h3.notion-collection__header {
     margin-top: 20px !important;
 }
 
-#page-index .notion-callout__content {
-    margin: 0 !important;
-}
-
 #page-index .notion-callout a {
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
@@ -384,13 +381,16 @@ h3.notion-collection__header {
 #page-getting-there .notion-column,
 #page-getting-there .notion-column *,
 #page-while-there .notion-column,
-#page-while-there .notion-column * {
+#page-while-there .notion-column *,
+#page-questions .notion-column,
+#page-questions .notion-column * {
     height: auto !important;
 }
 
 #page-our-story .notion-column:first-child,
 #page-getting-there .notion-column:first-child,
-#page-while-there .notion-column:first-child {
+#page-while-there .notion-column:first-child,
+#page-questions .notion-column:first-child {
     position: sticky !important;
     height: 100vh !important;
     top: 0 !important;
