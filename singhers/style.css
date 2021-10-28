@@ -329,8 +329,14 @@ h3 {
     height: auto !important;
 }
 
-#page-our-story .notion-column:first-child {
+#page-our-story .notion-column:first-child,
+#page-getting-there .notion-column:first-child {
     position: sticky !important;
     height: 100vh !important;
     top: 0 !important;
+}
+
+#page-our-story .notion-column:last-child .notion-image,
+#page-getting-there .notion-column:last-child .notion-image {
+    padding: 80px !important;
 }
