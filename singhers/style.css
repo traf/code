@@ -413,7 +413,7 @@ h3.notion-collection__header {
 @media (max-width: 600px) {
 
     h1 { font-size: 48px !important; }
-    h1 { font-size: 34px !important; }
+    h2 { font-size: 34px !important; }
     
     .super-content { overflow-x: hidden !important; }
     .super-navbar__menu { padding: 24px 0 !important; }
