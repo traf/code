@@ -61,12 +61,6 @@ body {
     margin: 0 !important;
 }
 
-.notion-column .notion-image,
-.notion-column .notion-image *,
-.notion-column .notion-callout {
-    height: 100% !important;
-}
-
 .notion-image img {
     object-fit: cover !important;
 }
@@ -232,6 +226,13 @@ h3 {
     padding: 0 !important;
     margin: 0 !important;
     flex: 1 !important;
+}
+
+.notion-column .notion-image,
+.notion-column .notion-image div,
+.notion-column .notion-image span,
+.notion-column .notion-callout {
+    height: 100% !important;
 }
 
 /*—————————————————————————————————*/
