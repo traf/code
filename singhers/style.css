@@ -324,6 +324,7 @@ h3 {
     font-weight: 100 !important;
 }
 
-#page-our-story .notion-column .notion-callout {
+#page-our-story .notion-column,
+#page-our-story .notion-column * {
     height: auto !important;
 }
