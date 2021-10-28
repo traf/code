@@ -323,3 +323,7 @@ h3 {
 #page-our-story p * {
     font-weight: 100 !important;
 }
+
+#page-our-story .notion-column .notion-callout {
+    height: auto !important;
+}
