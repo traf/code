@@ -17,6 +17,7 @@
     --color-bg-default: #fefcf8 !important;
     --color-bg-green-light: var(--color-primary) !important;
     --color-bg-green: var(--color-primary) !important;
+    --color-card-bg: transparent !important;
     --font: 'malayalam', serif !important;
 }
 
@@ -261,9 +262,10 @@ p strong {
 .notion-collection-card__cover,
 .notion-collection-card__cover>div,
 .notion-collection-card__cover img {
-    min-height: auto !important;
+    border-radius: 4px !important;
+    min-height: 160px !important;
     max-height: none !important;
-    height: 200px !important;
+    height: 160px !important;
     border: none !important;
 }
 
