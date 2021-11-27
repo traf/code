@@ -27,13 +27,13 @@ strong a {
     font-size: 24px !important;
     border: none !important;
     opacity: 1 !important;
-    z-index: 1 !important;
 }
 
 strong a:before,
 strong a:after {
     border: 2px solid var(--color-black) !important;
     transition: var(--transition) !important;
+    pointer-events: none !important;
     position: absolute !important;
     border-radius: 4px !important;
     content: "" !important;
@@ -52,10 +52,6 @@ strong a:before {
 strong a:after {
     background: var(--color-yellow) !important;
     z-index: -2 !important;
-}
-
-strong a:hover {
-    transform: translate(-16px, -16px) !important;
 }
 
 strong a:hover:before {

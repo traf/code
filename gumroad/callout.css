@@ -5,6 +5,7 @@
 }
 
 .notion-callout__content {
+    overflow: visible !important;
     padding: 0 !important;
     margin: 0 !important;
 }
