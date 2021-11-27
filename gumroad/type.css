@@ -29,9 +29,9 @@ strong a {
     opacity: 1 !important;
 }
 
-strong a:before,
 strong a:after {
     border: 2px solid var(--color-black) !important;
+    background: var(--color-yellow) !important;
     transition: var(--transition) !important;
     pointer-events: none !important;
     position: absolute !important;
@@ -44,20 +44,6 @@ strong a:after {
     top: 0 !important;
 }
 
-strong a:before {
-    background: var(--color-pink) !important;
-    z-index: -1 !important;
-}
-
-strong a:after {
-    background: var(--color-yellow) !important;
-    z-index: -2 !important;
-}
-
-strong a:hover:before {
-    transform: translate(8px, 8px) !important;
-}
-
 strong a:hover:after {
-    transform: translate(16px, 16px) !important;
+    transform: translate(8px, 8px) !important;
 }
