@@ -31,7 +31,8 @@
 
 .super-navbar__item {
     position: relative !important;
-    padding: 6px 22px !important;
+    padding: 6px 0 !important;
+    margin: 0 22px !important;
     height: auto !important;
     opacity: 1 !important;
 }
