@@ -29,6 +29,7 @@ strong a {
     opacity: 1 !important;
 }
 
+/* 
 strong a:before,
 strong a:after {
     border: 2px solid var(--color-black) !important;
@@ -36,6 +37,7 @@ strong a:after {
     position: absolute !important;
     border-radius: 4px !important;
     content: "" !important;
+    width: 100% !important;
     bottom: 0 !important;
     right: 0 !important;
     left: 0 !important;
@@ -53,13 +55,13 @@ strong a:after {
 }
 
 strong a:hover {
-    transform: translate(-12px, -12px) !important;
+    transform: translate(-16px, -16px) !important;
 }
 
 strong a:hover:before {
-    transform: translate(6px, 6px) !important;
+    transform: translate(8px, 8px) !important;
 }
 
 strong a:hover:after {
-    transform: translate(12px, 12px) !important;
-}
+    transform: translate(16px, 16px) !important;
+} */

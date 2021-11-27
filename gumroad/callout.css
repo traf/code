@@ -12,3 +12,57 @@
 .notion-callout__icon {
     display: none !important;
 }
+
+
+/* Buttons */
+.notion-callout .notion-callout {
+    background: var(--color-black) !important;
+    transition: var(--transition) !important;
+    color: var(--color-white) !important;
+    padding: 18px 32px 20px !important;
+    display: inline-block !important;
+    position: relative !important;
+    border-radius: 4px !important;
+    text-align: center !important;
+    font-weight: 400 !important;
+    min-width: 288px !important;
+    font-size: 24px !important;
+    border: none !important;
+    opacity: 1 !important;
+}
+
+.notion-callout .notion-callout:before,
+.notion-callout .notion-callout:after {
+    border: 2px solid var(--color-black) !important;
+    transition: var(--transition) !important;
+    position: absolute !important;
+    border-radius: 4px !important;
+    content: "" !important;
+    width: 100% !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
+}
+
+.notion-callout .notion-callout:before {
+    background: var(--color-pink) !important;
+    z-index: -1 !important;
+}
+
+.notion-callout .notion-callout:after {
+    background: var(--color-yellow) !important;
+    z-index: -2 !important;
+}
+
+.notion-callout .notion-callout:hover {
+    transform: translate(-16px, -16px) !important;
+}
+
+.notion-callout .notion-callout:hover:before {
+    transform: translate(8px, 8px) !important;
+}
+
+.notion-callout .notion-callout:hover:after {
+    transform: translate(16px, 16px) !important;
+}
