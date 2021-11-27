@@ -8,15 +8,11 @@
 }
 
 .notion-column .notion-image,
-.notion-column .notion-callout:first-of-type {
+.notion-column .notion-callout {
     height: 100% !important;
 }
 
-.notion-column .notion-callout:first-of-type {
+.notion-column .notion-callout {
     align-items: center !important;
     padding: 100px !important;
-}
-
-.notion-column .notion-callout:first-child {
-    border-right: 2px solid var(--color-black) !important;
 }

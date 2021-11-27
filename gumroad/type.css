@@ -13,7 +13,7 @@ p {
 .notion-text { min-height: 40px !important; }
 
 /* Buttons */
-/* strong a {
+strong a {
     background: var(--color-black) !important;
     transition: var(--transition) !important;
     color: var(--color-white) !important;
@@ -63,4 +63,4 @@ strong a:hover:before {
 
 strong a:hover:after {
     transform: translate(16px, 16px) !important;
-} */
+}
