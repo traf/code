@@ -56,6 +56,10 @@ strong a:hover {
     transform: translate(-12px, -12px) !important;
 }
 
+strong a:hover:before {
+    transform: translate(6px, 6px) !important;
+}
+
 strong a:hover:after {
     transform: translate(12px, 12px) !important;
 }
