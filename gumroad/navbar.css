@@ -31,14 +31,14 @@
 
 .super-navbar__item {
     position: relative !important;
-    padding: 6px 0 !important;
-    margin: 0 22px !important;
+    margin: 0 22px 2px !important;
+    padding: 6px 0  !important;
     height: auto !important;
     opacity: 1 !important;
 }
 
 .super-navbar__item:after {
-    transition: all .3s ease-in-out !important;
+    transition: all .2s ease-in-out !important;
     background: var(--color-black) !important;
     position: absolute !important;
     content: "" !important;
