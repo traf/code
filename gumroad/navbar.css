@@ -46,4 +46,5 @@
 .super-navbar__cta:hover {
     background: var(--color-pink) !important;
     color: var(--color-black) !important;
+    opacity: 1 !important;
 }

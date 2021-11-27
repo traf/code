@@ -20,7 +20,10 @@ strong a {
     display: inline-block !important;
     position: relative !important;
     border-radius: 4px !important;
+    text-align: center !important;
+    font-weight: 400 !important;
     min-width: 288px !important;
     font-size: 24px !important;
     border: none !important;
+    opacity: 1 !important;
 }
