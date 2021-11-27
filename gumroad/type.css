@@ -27,7 +27,6 @@ strong a {
     font-size: 24px !important;
     border: none !important;
     opacity: 1 !important;
-    z-index: 3 !important;
 }
 
 strong a:before,
@@ -45,12 +44,12 @@ strong a:after {
 
 strong a:before {
     background: var(--color-pink) !important;
-    z-index: 2 !important;
+    z-index: -1 !important;
 }
 
 strong a:after {
     background: var(--color-yellow) !important;
-    z-index: 1 !important;
+    z-index: -2 !important;
 }
 
 strong a:hover {
