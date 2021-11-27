@@ -9,12 +9,13 @@ p {
     font-size: 24px !important;
 }
 
-.notion-semantic-string {
-    line-height: inherit !important;
-}
+.notion-semantic-string { line-height: inherit !important; }
+.notion-text { min-height: 40px !important; }
 
+/* Buttons */
 strong a {
     background: var(--color-black) !important;
+    transition: var(--transition) !important;
     color: var(--color-white) !important;
     padding: 18px 32px 20px !important;
     display: inline-block !important;
@@ -28,6 +29,24 @@ strong a {
     opacity: 1 !important;
 }
 
-.notion-text {
-    min-height: 40px !important;
+strong a:before,
+strong a:after {
+    border: 2px solid var(--color-black) !important;
+    position: absolute !important;
+    border-radius: 4px !important;
+    height: 100% !important;
+    width: 100% !important;
+    content: "" !important;
+}
+
+strong a:before {
+    background: var(--color-pink) !important;
+}
+
+strong a:after {
+    background: var(--color-yellow) !important;
+}
+
+strong a:hover {
+    transform: translate(16px, 16px) !important;
 }

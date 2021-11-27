@@ -38,8 +38,8 @@
 }
 
 .super-navbar__item:after {
-    transition: all .2s ease-in-out !important;
     background: var(--color-black) !important;
+    transition: var(--transition) !important;
     position: absolute !important;
     content: "" !important;
     height: 1px !important;

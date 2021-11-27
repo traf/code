@@ -22,6 +22,7 @@
     --color-bg-pink-light: var(--color-pink) !important;
 
     --column-spacing: 0 !important;
+    --transition: all .2s ease-in-out !important;
 }
 
 body {
