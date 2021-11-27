@@ -8,3 +8,7 @@
     padding: 0 !important;
     margin: 0 !important;
 }
+
+.notion-callout__icon {
+    display: none !important;
+}
