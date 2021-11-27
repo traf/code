@@ -11,6 +11,7 @@ strong a {
     color: var(--color-white) !important;
     padding: 18px 32px 20px !important;
     display: inline-block !important;
+    position: relative !important;
     border-radius: 4px !important;
     min-width: 288px !important;
     font-size: 24px !important;
