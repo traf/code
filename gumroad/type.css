@@ -27,3 +27,7 @@ strong a {
     border: none !important;
     opacity: 1 !important;
 }
+
+.notion-text {
+    min-height: 40px !important;
+}
