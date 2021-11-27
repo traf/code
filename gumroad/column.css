@@ -8,11 +8,11 @@
 }
 
 .notion-column .notion-image,
-.notion-column .notion-callout {
+.notion-column .notion-callout:first-of-type {
     height: 100% !important;
 }
 
-.notion-column .notion-callout {
+.notion-column .notion-callout:first-of-type {
     align-items: center !important;
     padding: 100px !important;
 }
