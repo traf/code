@@ -13,7 +13,7 @@ p {
 .notion-text { min-height: 40px !important; }
 
 /* Buttons */
-strong a {
+/* strong a {
     background: var(--color-black) !important;
     transition: var(--transition) !important;
     color: var(--color-white) !important;
@@ -29,7 +29,6 @@ strong a {
     opacity: 1 !important;
 }
 
-/* 
 strong a:before,
 strong a:after {
     border: 2px solid var(--color-black) !important;
