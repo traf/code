@@ -41,6 +41,7 @@
     transition: all .3s ease-in-out !important;
     background: var(--color-black) !important;
     position: absolute !important;
+    content: "" !important;
     height: 1px !important;
     opacity: 0 !important;
     bottom: 0 !important;
