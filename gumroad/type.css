@@ -1,3 +1,18 @@
 h1 {
     font-size: 90px !important;
 }
+
+p {
+    font-size: 24px !important;
+}
+
+strong a {
+    background: var(--color-black) !important;
+    color: var(--color-white) !important;
+    padding: 18px 32px 20px !important;
+    display: inline-block !important;
+    border-radius: 4px !important;
+    min-width: 288px !important;
+    font-size: 24px !important;
+    border: none !important;
+}
