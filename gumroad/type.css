@@ -1,4 +1,7 @@
 h1 {
+    letter-spacing: -3px !important;
+    line-height: 0.9 !important;
+    font-weight: 400 !important;
     font-size: 90px !important;
 }
 
