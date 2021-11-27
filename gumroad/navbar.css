@@ -30,7 +30,25 @@
 }
 
 .super-navbar__item {
-    padding: 14px 22px !important;
+    position: relative !important;
+    padding: 6px 22px !important;
+    height: auto !important;
+    opacity: 1 !important;
+}
+
+.super-navbar__item:after {
+    transition: all .3s ease-in-out !important;
+    background: var(--color-black) !important;
+    position: absolute !important;
+    height: 1px !important;
+    opacity: 0 !important;
+    bottom: 0 !important;
+    width: 0 !important;
+    left: 0 !important;
+}
+
+.super-navbar__item:hover:after {
+    width: 100% !important;
     opacity: 1 !important;
 }
 
