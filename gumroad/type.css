@@ -27,26 +27,36 @@ strong a {
     font-size: 24px !important;
     border: none !important;
     opacity: 1 !important;
+    z-index: 3 !important;
 }
 
 strong a:before,
 strong a:after {
     border: 2px solid var(--color-black) !important;
+    transition: var(--transition) !important;
     position: absolute !important;
     border-radius: 4px !important;
-    height: 100% !important;
-    width: 100% !important;
     content: "" !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
 }
 
 strong a:before {
     background: var(--color-pink) !important;
+    z-index: 2 !important;
 }
 
 strong a:after {
     background: var(--color-yellow) !important;
+    z-index: 1 !important;
 }
 
 strong a:hover {
-    transform: translate(16px, 16px) !important;
+    transform: translate(-12px, -12px) !important;
+}
+
+strong a:hover:after {
+    transform: translate(12px, 12px) !important;
 }
