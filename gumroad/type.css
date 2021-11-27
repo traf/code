@@ -29,7 +29,7 @@ strong a {
     opacity: 1 !important;
 }
 
-strong a:after {
+strong a:before {
     border: 2px solid var(--color-black) !important;
     background: var(--color-yellow) !important;
     transition: var(--transition) !important;
@@ -44,6 +44,6 @@ strong a:after {
     top: 0 !important;
 }
 
-strong a:hover:after {
+strong a:hover:before {
     transform: translate(8px, 8px) !important;
 }
