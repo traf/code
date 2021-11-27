@@ -1,12 +1,16 @@
 h1 {
     letter-spacing: -3px !important;
-    line-height: 0.9 !important;
+    line-height: 1 !important;
     font-weight: 400 !important;
     font-size: 90px !important;
 }
 
 p {
     font-size: 24px !important;
+}
+
+.notion-semantic-string {
+    line-height: inherit !important;
 }
 
 strong a {
