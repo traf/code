@@ -27,6 +27,7 @@ strong a {
     font-size: 24px !important;
     border: none !important;
     opacity: 1 !important;
+    z-index: 1 !important;
 }
 
 strong a:before,
