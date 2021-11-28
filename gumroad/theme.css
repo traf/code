@@ -15,6 +15,7 @@
     --color-text-default: var(--color-black) !important;
 
     --color-bg-gray: var(--color-black) !important;
+    --color-bg-gray-light: var(--color-black) !important;
     --color-bg-orange-light: var(--color-orange) !important;
     --color-bg-yellow-light: var(--color-yellow) !important;
     --color-bg-green-light: var(--color-green) !important;
