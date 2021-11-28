@@ -6,6 +6,10 @@
     border-top: 2px solid var(--color-black) !important;
 }
 
+.notion-column-list .notion-column:nth-child(odd) {
+    border-right: 2px solid var(--color-black) !important;
+}
+
 .notion-column {
     width: 100% !important;
     padding: 0 !important;
@@ -21,10 +25,6 @@
     justify-content: center !important;
     align-items: center !important;
     padding: 100px !important;
-}
-
-.notion-column .notion-callout:first-child {
-    border-right: 2px solid var(--color-black) !important;
 }
 
 .notion-column .notion-callout h2 {
