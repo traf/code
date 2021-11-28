@@ -2,8 +2,10 @@
     background: var(--color-black) !important;
     color: var(--color-white) !important;
     font-weight: 400 !important;
+    overflow: scroll !important;
     font-size: 90px !important;
     padding: 40px 0 !important;
+    width: 100% !important;
     margin: 0 !important;
 }
 
