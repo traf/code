@@ -14,6 +14,7 @@
 
 .notion-column .notion-callout {
     border-bottom: 2px solid var(--color-black) !important;
+    border-top: 2px solid var(--color-black) !important;
     justify-content: center !important;
     align-items: center !important;
     padding: 100px !important;
