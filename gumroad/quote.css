@@ -5,17 +5,18 @@
     overflow: hidden !important;
     font-size: 90px !important;
     padding: 40px 0 !important;
+    border: none !important;
     width: 100% !important;
     margin: 0 !important;
 }
 
 .notion-quote .notion-semantic-string {
-    animation: slide 15s linear infinite !important;
+    -webkit-animation: slide 60s linear infinite !important;
+    animation: slide 60s linear infinite !important;
     will-change: transform !important;
     display: inline-block !important;
     white-space: nowrap !important;
     width: max-content !important;
-    padding-left: 100%;
 }
 
 @keyframes slide {
