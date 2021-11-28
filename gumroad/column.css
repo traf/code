@@ -3,18 +3,14 @@
 }
 
 .notion-column {
-    border-bottom: 2px solid var(--color-black) !important;
-    border-top: 2px solid var(--color-black) !important;
     width: 100% !important;
     padding: 0 !important;
 }
 
-.notion-column:first-child {
-    border-right: 2px solid var(--color-black) !important;
-}
-
 .notion-column .notion-image,
 .notion-column .notion-callout {
+    border-bottom: 2px solid var(--color-black) !important;
+    border-top: 2px solid var(--color-black) !important;
     height: 100% !important;
 }
 
@@ -22,6 +18,10 @@
     justify-content: center !important;
     align-items: center !important;
     padding: 100px !important;
+}
+
+.notion-column .notion-callout:first-child {
+    border-right: 2px solid var(--color-black) !important;
 }
 
 .notion-column .notion-callout h2 {
