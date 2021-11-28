@@ -11,8 +11,8 @@
 }
 
 .notion-quote .notion-semantic-string {
-    -webkit-animation: slide 160s linear infinite !important;
-    animation: slide 160s linear infinite !important;
+    -webkit-animation: slide 200s linear infinite !important;
+    animation: slide 200s linear infinite !important;
     will-change: transform !important;
     display: inline-block !important;
     white-space: nowrap !important;
