@@ -24,5 +24,6 @@
 }
 
 .notion-column .notion-callout h2 {
+    margin: 12px auto !important;
     font-size: 48px !important;
 }
