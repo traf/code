@@ -28,3 +28,7 @@
     margin: 12px auto !important;
     font-size: 48px !important;
 }
+
+.notion-column .notion-image img {
+    object-fit: cover !important;
+}
