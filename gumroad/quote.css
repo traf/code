@@ -4,15 +4,15 @@
     font-weight: 400 !important;
     overflow: hidden !important;
     font-size: 90px !important;
-    padding: 40px 0 !important;
+    padding: 32px 0 !important;
     border: none !important;
     width: 100% !important;
     margin: 0 !important;
 }
 
 .notion-quote .notion-semantic-string {
-    -webkit-animation: slide 120s linear infinite !important;
-    animation: slide 120s linear infinite !important;
+    -webkit-animation: slide 160s linear infinite !important;
+    animation: slide 160s linear infinite !important;
     will-change: transform !important;
     display: inline-block !important;
     white-space: nowrap !important;
