@@ -6,3 +6,7 @@
     padding: 40px 0 !important;
     margin: 0 !important;
 }
+
+.notion-quote .notion-semantic-string {
+    white-space: nowrap !important;
+}
