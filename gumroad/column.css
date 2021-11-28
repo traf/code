@@ -13,14 +13,14 @@
 }
 
 .notion-column .notion-callout {
-    border-bottom: 2px soldi var(--color-black) !important;
+    border-bottom: 2px solid var(--color-black) !important;
     justify-content: center !important;
     align-items: center !important;
     padding: 100px !important;
 }
 
 .notion-column .notion-callout:first-child {
-    border-right: 2px soldi var(--color-black) !important;
+    border-right: 2px solid var(--color-black) !important;
 }
 
 .notion-column .notion-callout h2 {
