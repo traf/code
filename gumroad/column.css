@@ -2,7 +2,7 @@
     flex-wrap: nowrap !important;
 }
 
-.notion-column-list:nth-child(-n + 2) {
+.notion-column-list .notion-callout:nth-child(-n + 2) {
     border-top: 2px solid var(--color-black) !important;
 }
 
