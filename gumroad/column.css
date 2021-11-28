@@ -21,12 +21,6 @@
     height: 100% !important;
 }
 
-.notion-column .notion-callout {
-    justify-content: center !important;
-    align-items: center !important;
-    padding: 100px !important;
-}
-
 .notion-column .notion-callout h2 {
     margin: 12px auto !important;
     font-size: 48px !important;

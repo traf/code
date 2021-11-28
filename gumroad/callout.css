@@ -1,5 +1,8 @@
 .notion-callout {
+    justify-content: center !important;
+    align-items: center !important;
     border-radius: 0 !important;
+    padding: 100px !important;
     border: none !important;
     margin: 0 !important;
 }
