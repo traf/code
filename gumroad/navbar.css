@@ -1,4 +1,5 @@
 .super-navbar {
+    border-bottom: 2px solid var(--color-black) !important;
     border-top: 2px solid var(--color-black) !important;
     margin-top: 260px !important;
     top: 0 !important;
