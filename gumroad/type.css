@@ -5,6 +5,15 @@ h1 {
     font-size: 90px !important;
 }
 
+h2 {
+    text-align: center !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    font-size: 36px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 p {
     font-size: 24px !important;
 }

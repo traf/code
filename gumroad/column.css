@@ -13,6 +13,11 @@
 }
 
 .notion-column .notion-callout {
+    justify-content: center !important;
     align-items: center !important;
     padding: 100px !important;
+}
+
+.notion-column .notion-callout h2 {
+    font-size: 48px !important;
 }
