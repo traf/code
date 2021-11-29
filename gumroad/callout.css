@@ -1,10 +1,12 @@
 .notion-callout {
-    border-color: var(--color-black) !important;
+    border-bottom: 2px solid var(--color-black) !important;
     justify-content: center !important;
     align-items: center !important;
-    border: 0 0 2px 0 !important;
     border-radius: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
     padding: 100px !important;
+    border-top: 0 !important;
     margin: 0 !important;
 }
 
