@@ -8,7 +8,7 @@
     margin: 0 !important;
 }
 
-.notion-callout:nth-child(odd) {
+.notion-column .notion-callout:nth-child(odd) {
     border-right: 2px solid var(--color-black) !important;
 }
 
