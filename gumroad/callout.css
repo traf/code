@@ -1,10 +1,15 @@
 .notion-callout {
+    border-color: var(--color-black) !important;
     justify-content: center !important;
     align-items: center !important;
+    border: 0 0 2px 0 !important;
     border-radius: 0 !important;
     padding: 100px !important;
-    border: none !important;
     margin: 0 !important;
+}
+
+.notion-callout:nth-child(odd) {
+    border-right: 2px solid var(--color-black) !important;
 }
 
 .notion-callout__content {

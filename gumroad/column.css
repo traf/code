@@ -3,14 +3,8 @@
 }
 
 .notion-column {
-    border-bottom: 2px solid var(--color-black) !important;
-    border-top: 2px solid var(--color-black) !important;
     width: 100% !important;
     padding: 0 !important;
-}
-
-.notion-column:nth-child(odd) {
-    border-right: 2px solid var(--color-black) !important;
 }
 
 .notion-column .notion-image,
