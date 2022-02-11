@@ -1,0 +1,41 @@
+@import "https://code.tr.af/snippets/reset.css";
+
+@font-face {
+    font-family: 'carbon';
+    src:  url('https://code.tr.af/assets/fonts/carbon.woff') format('woff')
+}
+
+:root {
+    --color-bg-default: #111 !important;
+    --color-text-default: #fff !important;
+    --color-border-default: #161616 !important;
+}
+
+.notion-dropdown__button,
+.notion-dropdown__menu-header,
+.notion-collection__header,
+.notion-dropdown__option-icon {
+    display: none !important;
+}
+
+.notion-dropdown__menu.initial-state {
+    z-index: auto !important;
+    opacity: 1 !important;
+}
+
+.notion-dropdown__menu.animate-out {
+    animation: none !important;
+}
+
+.notion-dropdown__option-list {
+    display: flex !important;
+}
+
+.notion-dropdown__menu {
+    position: relative !important;
+    background: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+}
