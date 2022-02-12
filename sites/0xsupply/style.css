@@ -15,6 +15,7 @@
     --color-card-bg: var(--color-bg) !important;
     --color-bg-default: var(--color-bg) !important;
     --color-text-default: var(--color-white) !important;
+    --color-ui-hover-bg: var(--color-borders) !important;
     --color-border-default: var(--color-borders) !important;
 }
 
