@@ -1,14 +1,16 @@
 @import "https://code.tr.af/snippets/reset.css";
 
-@font-face {
-    font-family: 'carbon';
-    src:  url('https://code.tr.af/fonts/carbon.woff') format('woff')
-}
+@font-face { font-family: 'loos'; src:  url('https://code.tr.af/fonts/loos.woff2') format('woff2') }
+@font-face { font-family: 'carbon'; src:  url('https://code.tr.af/fonts/carbon.woff2') format('woff2') }
 
 :root {
     --color-bg-default: #111 !important;
     --color-text-default: #fff !important;
     --color-border-default: #161616 !important;
+}
+
+body {
+    font-family: 'loos', sans-serif;
 }
 
 .notion-dropdown__button,
