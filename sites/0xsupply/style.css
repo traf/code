@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'carbon';
-    src:  url('https://code.tr.af/assets/fonts/carbon.woff') format('woff')
+    src:  url('https://code.tr.af/fonts/carbon.woff') format('woff')
 }
 
 :root {
@@ -14,7 +14,8 @@
 .notion-dropdown__button,
 .notion-dropdown__menu-header,
 .notion-collection__header,
-.notion-dropdown__option-icon {
+.notion-dropdown__option-icon
+#page-index .notion-header {
     display: none !important;
 }
 
