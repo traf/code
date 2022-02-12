@@ -18,7 +18,7 @@ body {
 .notion-dropdown__button,
 .notion-dropdown__menu-header,
 .notion-collection__header,
-.notion-dropdown__option-icon
+.notion-dropdown__option-icon,
 #page-index .notion-header {
     display: none !important;
 }
