@@ -9,6 +9,7 @@
 :root {
     --color-bg: #111 !important;
     --color-white: #fff !important;
+    --color-grey: #696969 !important;
     --color-borders: #161616 !important;
 
     --color-card-bg: var(--color-bg) !important;

@@ -1,7 +1,7 @@
 .notion-collection-gallery {
+    padding: 24px 0 !important;
     border: none !important;
     grid-gap: 0 !important;
-    padding: 0 !important;
 }
 
 .notion-collection-gallery.small {
