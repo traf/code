@@ -1,0 +1,29 @@
+.notion-dropdown__button,
+.notion-dropdown__menu-header,
+.notion-dropdown__option-icon {
+    display: none !important;
+}
+
+.notion-dropdown__menu.initial-state {
+    z-index: auto !important;
+    opacity: 1 !important;
+}
+
+.notion-dropdown__menu.animate-out {
+    animation: none !important;
+}
+
+.notion-dropdown__menu {
+    position: relative !important;
+    background: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+}
+
+.notion-dropdown__option { padding: 16px !important; }
+.notion-dropdown__option:first-child { padding: 16px 16px 16px 0 !important; }
+.notion-dropdown__option p { font-size: 18px !important; }
+.notion-dropdown__option:hover { background: none !important; }
+.notion-dropdown__option-list { display: flex !important; }

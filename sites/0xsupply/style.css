@@ -1,5 +1,6 @@
 @import "https://code.tr.af/snippets/reset.css";
-@import "type.css";
+@import "typography.css";
+@import "dropdown.css";
 
 @font-face { font-family: 'loos'; src:  url('https://code.tr.af/fonts/loos.woff2') format('woff2') }
 @font-face { font-family: 'carbon'; src:  url('https://code.tr.af/fonts/carbon.woff2') format('woff2') }
@@ -21,33 +22,7 @@ body {
     padding: 0 !important;
 }
 
-
-.notion-dropdown__button,
-.notion-dropdown__menu-header,
 .notion-collection__header,
-.notion-dropdown__option-icon,
 #page-index .notion-header {
     display: none !important;
-}
-
-.notion-dropdown__menu.initial-state {
-    z-index: auto !important;
-    opacity: 1 !important;
-}
-
-.notion-dropdown__menu.animate-out {
-    animation: none !important;
-}
-
-.notion-dropdown__option-list {
-    display: flex !important;
-}
-
-.notion-dropdown__menu {
-    position: relative !important;
-    background: none !important;
-    box-shadow: none !important;
-    transform: none !important;
-    left: auto !important;
-    top: auto !important;
 }
