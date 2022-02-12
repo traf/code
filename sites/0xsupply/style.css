@@ -1,14 +1,20 @@
 @import "https://code.tr.af/snippets/reset.css";
 @import "filters.css";
+@import "gallery.css";
 @import "type.css";
 
 @font-face { font-family: 'loos'; src:  url('https://code.tr.af/fonts/loos.woff2') format('woff2') }
 @font-face { font-family: 'carbon'; src:  url('https://code.tr.af/fonts/carbon.woff2') format('woff2') }
 
 :root {
-    --color-bg-default: #111 !important;
-    --color-text-default: #fff !important;
-    --color-border-default: #161616 !important;
+    --color-bg: #111 !important;
+    --color-white: #fff !important;
+    --color-borders: #161616 !important;
+
+    --color-card-bg: var(--color-bg) !important;
+    --color-bg-default: var(--color-bg) !important;
+    --color-text-default: var(--color-white) !important;
+    --color-border-default: var(--color-borders) !important;
 }
 
 body {
