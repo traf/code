@@ -1,4 +1,5 @@
-@import "https://code.tr.af/snippets/reset.css";
+@import "./snippets/reset.css";
+@import "type.css";
 
 @font-face { font-family: 'loos'; src:  url('https://code.tr.af/fonts/loos.woff2') format('woff2') }
 @font-face { font-family: 'carbon'; src:  url('https://code.tr.af/fonts/carbon.woff2') format('woff2') }
@@ -12,6 +13,7 @@
 body {
     font-family: 'loos', sans-serif;
 }
+
 
 .notion-dropdown__button,
 .notion-dropdown__menu-header,
