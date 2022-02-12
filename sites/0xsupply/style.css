@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: 'loos', sans-serif;
+    font-family: 'loos', sans-serif !important;
 }
 
 .super-content {
