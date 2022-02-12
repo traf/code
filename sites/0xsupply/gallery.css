@@ -17,6 +17,12 @@
     padding: 32px !important;
 }
 
+.notion-collection-card:hover {
+    box-shadow: 0 40px 40px -20px rgba(0,0,0,0.6) !important;
+    transform: scale(1.02) !important;
+    border-radius: 4px !important;
+}
+
 .notion-collection-card:before {
     background: url('arrow.svg') no-repeat center center !important;
     transition: var(--transition) !important;
