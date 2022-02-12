@@ -4,6 +4,12 @@
     display: none !important;
 }
 
+.notion-collection__header-wrapper {
+    position: sticky !important;
+    z-index: 999 !important;
+    top: 0 !important;
+}
+
 .notion-dropdown__menu.initial-state {
     z-index: auto !important;
     opacity: 1 !important;
@@ -26,4 +32,8 @@
 .notion-dropdown__option:first-child { padding: 16px 16px 16px 0 !important; }
 .notion-dropdown__option p { font-size: 18px !important; }
 .notion-dropdown__option:hover { background: none !important; }
-.notion-dropdown__option-list { display: flex !important; }
+
+.notion-dropdown__option-list {
+    display: flex !important;
+    padding: 0 !important;
+}
