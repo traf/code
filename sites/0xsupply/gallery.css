@@ -1,7 +1,15 @@
 .notion-collection-gallery {
+    border: none !important;
+    grid-gap: 0 !important;
     padding: 0 !important;
 }
 
 .notion-collection-gallery.small {
     grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.notion-collection-card {
+    border: 1px solid var(--color-borders) !important;
+    border-radius: 0 !important;
+    background: none !important;
 }
