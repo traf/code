@@ -1,4 +1,4 @@
-@import "./snippets/reset.css";
+@import "https://code.tr.af/snippets/reset.css";
 @import "type.css";
 
 @font-face { font-family: 'loos'; src:  url('https://code.tr.af/fonts/loos.woff2') format('woff2') }
