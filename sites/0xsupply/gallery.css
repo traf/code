@@ -19,7 +19,7 @@
 
 .notion-collection-card:hover {
     box-shadow: 0 40px 40px -20px rgba(0,0,0,0.12) !important;
-    transform: scale(1.02) !important;
+    transform: scale(1.04) !important;
 }
 
 .notion-collection-card:before {
