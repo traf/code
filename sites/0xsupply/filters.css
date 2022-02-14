@@ -29,11 +29,14 @@
 }
 
 .notion-dropdown__option {
-    transition: var(--transition) !important;
     padding: 32px 16px !important;
 }
 
-notion-dropdown__option:hover {
+.notion-dropdown__option:hover {
+    background: none !important;
+}
+
+.notion-dropdown__option:hover p {
     color: var(--color-grey) !important;
 }
 
@@ -42,11 +45,8 @@ notion-dropdown__option:hover {
 }
 
 .notion-dropdown__option p {
+    transition: var(--transition) !important;
     font-size: 18px !important;
-}
-
-.notion-dropdown__option:hover {
-    background: none !important;
 }
 
 .notion-dropdown__option-list {
