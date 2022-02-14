@@ -37,7 +37,7 @@
 }
 
 .notion-dropdown__option:hover p {
-    color: var(--color-grey) !important;
+    color: var(--color-white) !important;
 }
 
 .notion-dropdown__option:first-child {
@@ -46,6 +46,7 @@
 
 .notion-dropdown__option p {
     transition: var(--transition) !important;
+    color: var(--color-grey) !important;
     font-size: 18px !important;
 }
 
