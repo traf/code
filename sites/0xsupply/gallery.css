@@ -66,6 +66,10 @@
     padding: 0 !important;
 }
 
+.notion-property__title .notion-semantic-string {
+    white-space: normal !important;
+}
+
 .notion-collection-card__content {
     color: var(--color-grey) !important;
     margin-top: -12px !important;
