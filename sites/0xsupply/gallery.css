@@ -29,13 +29,13 @@
     height: 20px !important;
     width: 20px !important;
     content: "" !important;
-    right: 32px !important;
+    right: 28px !important;
     opacity: 0 !important;
-    top: 32px !important;
+    top: 28px !important;
 }
 
 .notion-collection-card:hover:before {
-    transform: translate(4px, -4px) !important;
+    transform: translate(8px, -8px) !important;
     opacity: 1 !important;
 }
 
