@@ -62,13 +62,13 @@
 @media (max-width: 800px) {
 
     .notion-dropdown__menu.initial-state {
-        opacity: 1 !important;
+        opacity: 0 !important;
     }
     
     .notion-dropdown__menu.animate-out {
         animation: dropdown-animation-out .12s ease forwards !important;
     }
-    
+
     .notion-dropdown {
         width: 100% !important;
     }
