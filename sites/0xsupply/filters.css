@@ -58,3 +58,59 @@
     display: flex !important;
     padding: 0 !important;
 }
+
+@media (max-width: 800px) {
+
+    .notion-dropdown__menu.initial-state {
+        opacity: 1 !important;
+    }
+    
+    .notion-dropdown__menu.animate-out {
+        animation: dropdown-animation-out .12s ease forwards !important;
+    }
+    
+    .notion-dropdown {
+        width: 100% !important;
+    }
+    
+    .notion-dropdown__button {
+        justify-content: space-between !important;
+        padding: 4px 20px 4px 12px !important;
+        background: #161616 !important;
+        display: flex !important;
+        width: 100% !important;
+    }
+    
+    .notion-dropdown__button-title {
+        padding: 12px !important;
+        margin: 0 !important;
+    }
+    
+    .notion-dropdown__button svg:first-child {
+        display: none !important;
+    }
+    
+    .notion-collection__header-wrapper {
+        position: absolute !important;
+        z-index: auto !important;
+        top: 280px !important;
+        width: 90% !important;
+    }
+    
+    .notion-dropdown__option-list {
+        flex-direction: column !important;
+    }
+    
+    .notion-dropdown__option,
+    .notion-dropdown__option:first-child {
+        padding: 12px 22px !important;
+    }
+    
+    .notion-dropdown__menu {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        background: #161616 !important;
+        margin-top: -2px !important;
+    }
+
+}

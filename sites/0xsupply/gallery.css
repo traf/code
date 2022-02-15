@@ -8,9 +8,15 @@
     grid-template-columns: repeat(4, 1fr) !important;
 }
 
+@keyframes card-scale {
+    0% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
 .notion-collection-card {
     border: 1px solid var(--color-borders) !important;
     transition: var(--transition) !important;
+    animation: card-scale 0.3s !important;
     position: relative !important;
     border-radius: 0 !important;
     background: none !important;
@@ -83,13 +89,23 @@
 }
 
 @media (max-width: 1200px) {
+
     .notion-collection-gallery.small {
         grid-template-columns: repeat(3, 1fr) !important;
     }
+
 }
 
 @media (max-width: 800px) {
-    .notion-collection-gallery.small {
+    
+    .notion-collection-gallery {
         grid-template-columns: 1fr !important;
+        padding: 60px 0 !important;
     }
+
+    .notion-collection-card:hover {
+        box-shadow: none !important;
+        transform: none !important;
+    }
+
 }

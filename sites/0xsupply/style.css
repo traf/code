@@ -35,3 +35,11 @@ body {
 #page-index .notion-header {
     display: none !important;
 }
+
+@media (max-width: 800px) {
+
+    .super-content {
+        margin: 80px auto 40px !important;
+    }
+
+}
