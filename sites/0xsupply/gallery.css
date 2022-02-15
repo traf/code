@@ -98,7 +98,7 @@
 
 @media (max-width: 800px) {
     
-    .notion-collection-gallery {
+    .notion-collection-gallery.small {
         grid-template-columns: 1fr !important;
         padding: 60px 0 !important;
     }
