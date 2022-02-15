@@ -81,3 +81,15 @@
     white-space: normal !important;
     line-height: 1.8 !important;
 }
+
+@media (max-width: 1200px) {
+    .notion-collection-gallery.small {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .notion-collection-gallery.small {
+        grid-template-columns: 1fr !important;
+    }
+}
