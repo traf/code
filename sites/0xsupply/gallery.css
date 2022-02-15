@@ -26,8 +26,8 @@
     background: url('arrow.svg') no-repeat center center !important;
     transition: var(--transition) !important;
     position: absolute !important;
-    height: 24px !important;
-    width: 24px !important;
+    height: 20px !important;
+    width: 20px !important;
     content: "" !important;
     right: 32px !important;
     opacity: 0 !important;
