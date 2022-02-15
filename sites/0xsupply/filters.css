@@ -32,6 +32,11 @@
     padding: 32px 16px !important;
 }
 
+.dropdown__active,
+.dropdown__active p {
+    color: var(--color-white) !important;
+}
+
 .notion-dropdown__option:hover {
     background: none !important;
 }
