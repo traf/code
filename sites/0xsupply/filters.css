@@ -32,8 +32,7 @@
     padding: 32px 16px !important;
 }
 
-.dropdown__active,
-.dropdown__active p {
+.notion-dropdown__option.active-filter p {
     color: var(--color-white) !important;
 }
 
