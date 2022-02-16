@@ -1,6 +1,7 @@
 @import "https://code.tr.af/snippets/reset.css";
 @import "filters.css";
 @import "gallery.css";
+@import "navbar.css";
 @import "type.css";
 
 @font-face { font-family: 'loos'; src:  url('https://code.tr.af/fonts/loos.woff2') format('woff2') }
@@ -34,15 +35,6 @@ body {
 .notion-toggle,
 #page-index .notion-header {
     display: none !important;
-}
-
-.super-navbar__item {
-    color: var(--color-grey) !important;
-    opacity: 1 !important;
-}
-
-.super-navbar__item:hover {
-    color: var(--color-white) !important;
 }
 
 @media (max-width: 800px) {

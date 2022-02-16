@@ -1,0 +1,12 @@
+.super-navbar__content {
+    padding: 16px !important;
+}
+
+.super-navbar__item {
+    color: var(--color-grey) !important;
+    opacity: 1 !important;
+}
+
+.super-navbar__item:hover {
+    color: var(--color-white) !important;
+}
