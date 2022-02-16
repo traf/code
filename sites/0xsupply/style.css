@@ -36,6 +36,15 @@ body {
     display: none !important;
 }
 
+.super-navbar__item {
+    color: var(--color-grey) !important;
+    opacity: 1 !important;
+}
+
+.super-navbar__item:hover {
+    color: var(--color-white) !important;
+}
+
 @media (max-width: 800px) {
 
     .super-content {
