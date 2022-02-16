@@ -1,0 +1,37 @@
+.super-content,
+.notion-header__content {
+    margin: 20px auto 0 !important;
+    max-width: 90% !important;
+    width: 1280px !important;
+    padding: 0 !important;
+}
+
+.super-content {
+    padding-bottom: 40px !important;
+}
+
+#page-index article {
+    padding-top: 80px !important;
+}
+
+.notion-toggle,
+#page-index .notion-header,
+.notion-header__cover.no-cover {
+    display: none !important;
+}
+
+.notion-embed__container>iframe {
+    background: none !important;
+}
+
+.notion-header {
+    padding-top: 100px !important;
+}
+
+@media (max-width: 800px) {
+
+    .page-index article {
+        padding-top: 40px !important;
+    }
+
+}

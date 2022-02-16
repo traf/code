@@ -1,0 +1,19 @@
+@font-face { font-family: 'loos'; src:  url('https://code.tr.af/fonts/loos.woff2') format('woff2') }
+
+:root {
+    --color-bg: #0c0c0d !important;
+    --color-white: #fff !important;
+    --color-grey: #696969 !important;
+    --color-borders: #101010 !important;
+    --transition: all .16s ease-in-out !important;
+
+    --color-card-bg: var(--color-bg) !important;
+    --color-bg-default: var(--color-bg) !important;
+    --color-text-default: var(--color-white) !important;
+    --color-ui-hover-bg: var(--color-borders) !important;
+    --color-border-default: var(--color-borders) !important;
+}
+
+body {
+    font-family: 'loos', sans-serif !important;
+}
