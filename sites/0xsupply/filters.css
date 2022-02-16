@@ -4,6 +4,10 @@
     display: none !important;
 }
 
+.notion-dropdown__menu-wrapper {
+    background: var(--color-bg) !important;
+}
+
 .notion-collection__header-wrapper {
     position: sticky !important;
     z-index: 999 !important;
