@@ -10,7 +10,7 @@
     --color-bg: #0c0c0d !important;
     --color-white: #fff !important;
     --color-grey: #696969 !important;
-    --color-borders: #161616 !important;
+    --color-borders: #111 !important;
     --transition: all .2s ease-in-out !important;
 
     --color-card-bg: var(--color-bg) !important;
