@@ -33,6 +33,10 @@ body {
     padding: 0 !important;
 }
 
+.super-content {
+    padding-bottom: 40px !important;
+}
+
 #page-index article {
     padding-top: 80px !important;
 }
