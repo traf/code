@@ -42,12 +42,17 @@ body {
 }
 
 .notion-toggle,
-#page-index .notion-header {
+#page-index .notion-header,
+.notion-header__cover.no-cover {
     display: none !important;
 }
 
 .notion-embed__container>iframe {
     background: none !important;
+}
+
+.notion-header {
+    padding-top: 100px !important;
 }
 
 @media (max-width: 800px) {
