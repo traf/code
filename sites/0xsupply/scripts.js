@@ -1,10 +1,12 @@
 // Smooth scroll on filter click
 const options = document.querySelectorAll('.notion-dropdown__option')
-options.forEach((option) => {
-  option.addEventListener('click', () => {
-     window.scrollTo({top: 400, behavior: "smooth"})
-  })
-}) 
+if(document.documentElement.scrollTop > 400) {
+  options.forEach((option) => {
+    option.addEventListener('click', () => {
+       window.scrollTo({top: 400, behavior: "smooth"})
+    })  
+  }) 
+} 
 
 // Active filter class
 function onPageLoad() {
