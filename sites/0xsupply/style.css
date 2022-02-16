@@ -48,8 +48,8 @@ body {
 
 @media (max-width: 800px) {
 
-    .super-content {
-        margin: 80px auto 40px !important;
+    .page-index article {
+        padding-top: 40px !important;
     }
 
 }
