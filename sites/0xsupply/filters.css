@@ -4,8 +4,9 @@
     display: none !important;
 }
 
-.notion-dropdown__menu-wrapper {
+.notion-dropdown {
     background: var(--color-bg) !important;
+    width: 100% !important;
 }
 
 .notion-collection__header-wrapper {
