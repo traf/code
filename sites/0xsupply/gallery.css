@@ -32,7 +32,7 @@
 }
 
 .notion-collection-card:before {
-    background: url('arrow.svg') no-repeat center center !important;
+    background: url('assets/arrow.svg') no-repeat center center !important;
     transition: var(--transition) !important;
     position: absolute !important;
     height: 20px !important;
