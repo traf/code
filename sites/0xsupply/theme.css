@@ -1,4 +1,8 @@
-@font-face { font-family: 'loos'; src:  url('https://code.tr.af/fonts/loos.woff2') format('woff2') }
+@font-face {
+    font-family: 'loos';
+    src: url('https://code.tr.af/fonts/loos.woff2') format('woff2');
+    font-weight: normal;
+}
 
 :root {
     --color-bg: #0c0c0d !important;
