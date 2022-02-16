@@ -1,7 +1,11 @@
 h1 {
     letter-spacing: -1px !important;
-    font-weight: normal !important;
+    font-weight: 600 !important;
     font-size: 48px !important;
+}
+
+p {
+    font-weight: normal !important;
 }
 
 @media (max-width: 800px) {
