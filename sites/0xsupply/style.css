@@ -37,6 +37,10 @@ body {
     display: none !important;
 }
 
+.notion-embed__container>iframe {
+    background: none !important;
+}
+
 @media (max-width: 800px) {
 
     .super-content {
