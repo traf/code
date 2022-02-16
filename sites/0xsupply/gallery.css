@@ -28,8 +28,7 @@
 }
 
 .notion-collection-card:hover {
-    box-shadow: 0 40px 40px -20px rgba(0,0,0,0.4) !important;
-    transform: scale(1.04) !important;
+    background: var(--color-borders) !important;
 }
 
 .notion-collection-card:before {
@@ -47,10 +46,6 @@
 .notion-collection-card:hover:before {
     transform: translate(8px, -8px) !important;
     opacity: 1 !important;
-}
-
-.notion-collection-card:hover {
-    background: var(--color-borders) !important;
 }
 
 .notion-property__file {
