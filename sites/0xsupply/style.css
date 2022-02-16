@@ -25,11 +25,16 @@ body {
     font-family: 'loos', sans-serif !important;
 }
 
-.super-content {
-    margin: 100px auto 40px !important;
+.super-content,
+.notion-header__content {
+    margin: 20px auto 0 !important;
     max-width: 90% !important;
     width: 1280px !important;
     padding: 0 !important;
+}
+
+article {
+    padding-top: 80px !important;
 }
 
 .notion-toggle,
