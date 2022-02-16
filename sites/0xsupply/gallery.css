@@ -1,3 +1,7 @@
+.notion-collection__header {
+    display: none !important;
+}
+
 .notion-collection-gallery {
     padding: 24px 0 !important;
     border: none !important;
