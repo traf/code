@@ -15,3 +15,12 @@ p {
     }
     
 }
+
+@supports (-webkit-touch-callout: none) {
+    
+    h1 {
+        letter-spacing: -2px !important;
+        margin-bottom: 30px !important;
+    }
+
+}  
