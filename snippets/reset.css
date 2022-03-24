@@ -28,6 +28,10 @@ ul, ol, li {
     margin: 0;
 }
 
+ul, ol, li {
+    list-style: none;
+}
+
 iframe, video, img {
     max-width: 100%;
     display: block;
@@ -40,4 +44,15 @@ img {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+input, button, select {
+    -webkit-appearance: none;
+	appearance: none;
+    outline: none;
+	border: none;
+}
+
+button, select {
+    cursor: pointer;
 }
