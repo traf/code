@@ -1,0 +1,48 @@
+.web3modal-modal-lightbox {
+    background: rgba(0,0,0,0.2) !important;
+}
+
+.web3modal-modal-card {
+    grid-template-columns: repeat(3, 1fr) !important;
+    border-radius: 28px !important;
+    overflow: visible !important;
+    background: #fff !important;
+    grid-gap: 16px !important;
+    padding: 20px !important;
+    margin: 0 !important;
+}
+
+.web3modal-provider-wrapper {
+    transition: all .4s cubic-bezier(0.4,2,0.68,1) !important;
+    border-radius: 20px !important;
+    padding: 32px 40px !important;
+    border: none !important;
+    width: 280px !important;
+    margin: 0 !important;
+}
+.web3modal-provider-wrapper:hover { transform: scale(1.04) !important; }
+.web3modal-provider-wrapper:active { transform: scale(1) !important; }
+
+.web3modal-provider-wrapper:nth-child(1n) { background-image: linear-gradient( 135deg, #FFE985 10%, #FA742B 100%) !important; box-shadow: 0 20px 40px -10px rgba(253,161,79,0.8) !important; }
+.web3modal-provider-wrapper:nth-child(1n):hover { box-shadow: 0 30px 60px -15px rgba(253,161,79,0.8) !important; }
+.web3modal-provider-wrapper:nth-child(1n):active { box-shadow: 0 20px 40px -10px rgba(253,161,79,0.8) !important; }
+
+.web3modal-provider-wrapper:nth-child(2n) { background-image: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%) !important; box-shadow: 0 20px 40px -10px rgba(96,142,235,0.8) !important; }
+.web3modal-provider-wrapper:nth-child(2n):hover { box-shadow: 0 30px 60px -15px rgba(96,142,235,0.8) !important; }
+.web3modal-provider-wrapper:nth-child(2n):active { box-shadow: 0 20px 40px -10px rgba(96,142,235,0.8) !important; }
+
+.web3modal-provider-wrapper:nth-child(3n) { background-image: linear-gradient( 135deg, #FFCF71 10%, #2376DD 100%) !important; box-shadow: 0 20px 40px -10px rgba(199,183,147,0.8) !important; }
+.web3modal-provider-wrapper:nth-child(3n):hover { box-shadow: 0 30px 60px -15px rgba(199,183,147,0.8) !important; }
+.web3modal-provider-wrapper:nth-child(3n):active { box-shadow: 0 20px 40px -10px rgba(199,183,147,0.8) !important; }
+
+
+.web3modal-provider-container {
+    border-radius: 0 !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.web3modal-provider-name,
+.web3modal-provider-description {
+    color: #fff !important;
+}
