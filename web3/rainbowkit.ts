@@ -12,7 +12,7 @@ import { configureChains, createConfig, WagmiConfig } from "wagmi"
 import { mainnet, arbitrum, optimism, polygon, zora, base } from "wagmi/chains"
 import { alchemyProvider } from "wagmi/providers/alchemy"
 import { publicProvider } from "wagmi/providers/public"
-import ENV from "https://code.tr.af/snippets/web3-env.ts"
+import ENV from "https://raw.githubusercontent.com/traf/traf.github.io/master/web3/env.ts"
 
 export const { chains, publicClient } = configureChains(
     [mainnet, arbitrum, optimism, polygon, zora, base],
