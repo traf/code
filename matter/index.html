@@ -12,9 +12,23 @@
             padding: 0;
             margin: 0;
         }
+        /* New styles for the regenerate button */
+        #regenerateButton {
+            position: absolute;
+            bottom: 20px;
+            left: 46%;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+        }
     </style>
 </head>
 <body>
+    <!-- New Regenerate Button -->
+    <button id="regenerateButton">Regenerate</button>
 
     <script src="three.js"></script>
     <script src="shader.js"></script>
@@ -23,7 +37,9 @@
     <script>
 
         var scene, camera, renderer;
-        var simulationnShader;
+        var simulationShader;
+        var renderShader; // Moved declaration to global scope
+        var primaryColor;
 
         window.onload = function() {
 
@@ -49,13 +65,13 @@
             document.body.appendChild(renderer.domElement);
 
             scene = new THREE.Scene();
-            camera = new THREE.PerspectiveCamera( 60,w/h, 1, 1280  );
-            camera.position.z = 1280;
+            camera = new THREE.PerspectiveCamera( 60,w/h, 1, 512  );
+            camera.position.z = 512;
 
-            var width  = 512;
-            var height = 512;
+            var width  = 1024;
+            var height = 1024;
 
-            var data = getSphere( width * height, 256 );
+            var data = getSphere( width * height, 128 );
             var texture = new THREE.DataTexture( data, width, height, THREE.RGBFormat, THREE.FloatType, THREE.DEFAULT_MAPPING, THREE.RepeatWrapping, THREE.RepeatWrapping );
             texture.needsUpdate = true;
 
@@ -73,12 +89,15 @@
 
             });
 
-            var renderShader = new THREE.ShaderMaterial( {
+            // Initialize primary color
+            primaryColor = getRandomColor();
+
+            renderShader = new THREE.ShaderMaterial( {
                 uniforms: {
                     positions: { type: "t", value: null },
                     pointSize: { type: "f", value: 2 },
-                    big: { type: "v3", value: new THREE.Vector3(207,221,212).multiplyScalar(1/0xFF) },
-                    small: { type: "v3", value: new THREE.Vector3( 213,239,229).multiplyScalar(1/0xFF) }
+                    big: { type: "v3", value: new THREE.Vector3().copy(primaryColor).multiplyScalar(1/0xFF) },
+                    small: { type: "v3", value: new THREE.Vector3().copy(primaryColor).multiplyScalar(1/0xFF) }
                 },
                 vertexShader: ShaderLoader.get( "render_vs"),
                 fragmentShader: ShaderLoader.get( "render_fs"),
@@ -92,6 +111,10 @@
 
             window.addEventListener( "resize", onResize );
             onResize();
+
+            // Add event listener for regenerate button
+            document.getElementById('regenerateButton').addEventListener('click', regenerateOrb);
+
             update();
         }
 
@@ -149,7 +172,6 @@
             camera.updateProjectionMatrix();
         }
 
-
         function update()
         {
             requestAnimationFrame(update);
@@ -170,6 +192,24 @@
             renderer.render( scene, camera );
 
         }
+
+        // Function to generate a random primary color
+        function getRandomColor() {
+            var hue = Math.random();
+            var saturation = 0.7;
+            var lightness = 0.5;
+            return new THREE.Color().setHSL(hue, saturation, lightness);
+        }
+
+        // Function to regenerate the orb with a new color
+        function regenerateOrb() {
+            primaryColor = getRandomColor();
+            renderShader.uniforms.big.value.set(primaryColor.r, primaryColor.g, primaryColor.b);
+            renderShader.uniforms.small.value.set(primaryColor.r, primaryColor.g, primaryColor.b);
+            // Optionally reset simulation if needed
+            simulationShader.uniforms.timer.value = 0;
+        }
+
     </script>
 
 </body>
