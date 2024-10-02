@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NFT Collection</title>
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #nftCanvas {
+            display: block;
+            margin: 0 auto 40px;
+            border: 1px solid #222;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center; /* Center buttons horizontally */
+        }
+        .buttons button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="nftCanvas" width="480" height="480"></canvas>
+    <div class="buttons">
+        <button id="regenerateBtn">Regenerate</button>
+        <button id="downloadBtn">Download SVG</button>
+    </div>
+    <script>
+        const canvas = document.getElementById('nftCanvas');
+        const ctx = canvas.getContext('2d');
+        let currentSVG = '';
+
+        function generateSVG() {
+            let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 36 36">`; // Changed viewBox to 36x36
+
+            // Define multiple cluster centers with varied shapes and positions
+            const numClusters = Math.floor(Math.random() * 3) + 1; // 1 to 3 clusters per image
+            const clusters = [];
+
+            for(let i = 0; i < numClusters; i++) {
+                // Randomly decide if the cluster is centered or in a corner
+                const isCorner = Math.random() > 0.7; // 30% chance to be in a corner
+                let clusterX, clusterY;
+
+                if(isCorner) {
+                    const corner = Math.floor(Math.random() * 4);
+                    switch(corner) {
+                        case 0: // Top-left
+                            clusterX = Math.random() * 10;
+                            clusterY = Math.random() * 10;
+                            break;
+                        case 1: // Top-right
+                            clusterX = 26 + Math.random() * 10;
+                            clusterY = Math.random() * 10;
+                            break;
+                        case 2: // Bottom-left
+                            clusterX = Math.random() * 10;
+                            clusterY = 26 + Math.random() * 10;
+                            break;
+                        case 3: // Bottom-right
+                            clusterX = 26 + Math.random() * 10;
+                            clusterY = 26 + Math.random() * 10;
+                            break;
+                    }
+                } else {
+                    // Centered cluster
+                    clusterX = Math.random() * 26 + 5;
+                    clusterY = Math.random() * 26 + 5;
+                }
+
+                // Define varied cluster shapes using random radii and orientations
+                const clusterRadiusX = 8 + Math.random() * 5; // 8 to 13
+                const clusterRadiusY = 5 + Math.random() * 5; // 5 to 10
+
+                clusters.push({ x: clusterX, y: clusterY, radiusX: clusterRadiusX, radiusY: clusterRadiusY });
+            }
+
+            for(let y = 0; y < 36; y++) { // Updated loop to 36
+                for(let x = 0; x < 36; x++) { // Updated loop to 36
+                    let size = 0.2; // Default 2x2 square
+                    let opacity = 0.2; // Changed default opacity from 0.1 to 0.2
+                    let inCluster = false;
+
+                    // Check if the current cell is within any cluster
+                    for(let cluster of clusters) {
+                        // Calculate elliptical distance to the cluster center
+                        const dx = (x - cluster.x) / cluster.radiusX;
+                        const dy = (y - cluster.y) / cluster.radiusY;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+
+                        if(dist < 1.5) { // Within the main cluster area
+                            inCluster = true;
+                            // Calculate opacity based on distance (100% at center to 20% at edge)
+                            opacity = 1.0 - (dist / 1.5) * 0.8; // Changed from *0.9 to *0.8
+                            opacity = Math.max(opacity, 0.2); // Ensure minimum opacity of 20%
+
+                            if(Math.random() > 0.3) { // 70% chance to have a larger block
+                                size = 0.2 + (0.6 * (1 - dist / 1.5)) + (Math.random() * 0.05);
+                                size = Math.min(size, 0.8); // Ensure size does not exceed 0.8
+                            }
+                            break; // Stop checking other clusters once inside one
+                        } else if(dist < 1.6) { // Surrounding transition area
+                            if(!inCluster) { // Only set size if not already in a cluster
+                                size = 0.25;
+                                opacity = 0.15; // Slightly higher opacity for transition area
+                            }
+                        }
+                    }
+
+                    // Introduce variance in cluster shapes
+                    if(inCluster && Math.random() > 0.85) { // 15% chance to revert to default size within cluster
+                        size = 0.2;
+                        opacity = 0.2; // Changed from 0.1 to 0.2
+                    }
+
+                    const offset = (1 - size) / 2;
+                    svg += `<rect x="${x + offset}" y="${y + offset}" width="${size}" height="${size}" fill="#FFF" fill-opacity="${opacity}"/>`;
+                }
+            }
+
+            svg += `</svg>`;
+            currentSVG = svg;
+            const img = new Image();
+            const svgBlob = new Blob([svg], {type: 'image/svg+xml;charset=utf-8'});
+            const url = URL.createObjectURL(svgBlob);
+            img.onload = function() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                URL.revokeObjectURL(url);
+            }
+            img.src = url;
+        }
+
+        document.getElementById('regenerateBtn').addEventListener('click', generateSVG);
+
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            const blob = new Blob([currentSVG], {type: 'image/svg+xml'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'nft.svg';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+
+        generateSVG();
+    </script>
+</body>
+</html>

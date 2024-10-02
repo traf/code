@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Lifespan Art</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #000; }
+        #canvas-container { position: relative; border: 1px solid #222; }
+        #regenerate { position: absolute; bottom: -80px; left: 50%; transform: translateX(-50%); padding: 10px 20px; background-color: #222; color: #fff; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="canvas-container">
+        <canvas id="nftCanvas" width="600" height="600"></canvas>
+        <button id="regenerate">Regenerate</button>
+    </div>
+
+    <script>
+        let scene, camera, renderer, particles, flyingParticles;
+        let lifespan, baseColor;
+        let shapeParams;
+
+        function init() {
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+            camera.position.z = 5;
+
+            renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('nftCanvas'), alpha: true });
+            renderer.setSize(600, 600);
+
+            createParticles();
+
+            animate();
+        }
+
+        function createParticles() {
+            lifespan = Math.floor(Math.random() * 2000) + 1;
+            baseColor = new THREE.Color(Math.random(), Math.random(), Math.random());
+            shapeParams = generateShapeParams();
+
+            const geometry = new THREE.BufferGeometry();
+            const particleCount = 5000;
+            const positions = new Float32Array(particleCount * 3);
+            const colors = new Float32Array(particleCount * 3);
+
+            for (let i = 0; i < particleCount; i++) {
+                const i3 = i * 3;
+                const [x, y, z] = getOrbPosition(Math.random(), Math.random(), Math.random());
+                positions[i3] = x;
+                positions[i3 + 1] = y;
+                positions[i3 + 2] = z;
+
+                const color = baseColor.clone().offsetHSL(Math.random() * 0.1 - 0.05, 0, Math.random() * 0.2 - 0.1);
+                colors[i3] = color.r;
+                colors[i3 + 1] = color.g;
+                colors[i3 + 2] = color.b;
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+            const material = new THREE.PointsMaterial({ size: 0.02, vertexColors: true });
+            particles = new THREE.Points(geometry, material);
+            scene.add(particles);
+
+            createFlyingParticles();
+        }
+
+        function generateShapeParams() {
+            return {
+                frequency: Math.random() * 10 + 5,
+                amplitude: Math.random() * 0.3 + 0.1,
+                phases: [Math.random() * Math.PI * 2, Math.random() * Math.PI * 2, Math.random() * Math.PI * 2],
+                offset: Math.random() * 0.2 - 0.1
+            };
+        }
+
+        function getOrbPosition(u, v, w) {
+            const theta = Math.PI * 2 * u;
+            const phi = Math.acos(2 * v - 1);
+            const r = Math.pow(w, 0.3) * (1 + 
+                shapeParams.amplitude * Math.sin(shapeParams.frequency * theta + shapeParams.phases[0]) * 
+                Math.sin(shapeParams.frequency * phi + shapeParams.phases[1]) *
+                Math.cos(shapeParams.frequency * (theta + phi) + shapeParams.phases[2])
+            ) + shapeParams.offset;
+            return [
+                r * Math.sin(phi) * Math.cos(theta),
+                r * Math.sin(phi) * Math.sin(theta),
+                r * Math.cos(phi)
+            ];
+        }
+
+        function createFlyingParticles() {
+            const geometry = new THREE.BufferGeometry();
+            const particleCount = 500;
+            const positions = new Float32Array(particleCount * 3);
+            const velocities = new Float32Array(particleCount * 3);
+            const colors = new Float32Array(particleCount * 3);
+
+            for (let i = 0; i < particleCount; i++) {
+                const i3 = i * 3;
+                const [x, y, z] = getOrbPosition(Math.random(), Math.random(), Math.random() * 0.5);
+                positions[i3] = x;
+                positions[i3 + 1] = y;
+                positions[i3 + 2] = z;
+
+                const speed = 0.005 + Math.random() * 0.01;
+                velocities[i3] = x * speed;
+                velocities[i3 + 1] = y * speed;
+                velocities[i3 + 2] = z * speed;
+
+                const color = baseColor.clone().offsetHSL(Math.random() * 0.2 - 0.1, 0, Math.random() * 0.4 - 0.2);
+                colors[i3] = color.r;
+                colors[i3 + 1] = color.g;
+                colors[i3 + 2] = color.b;
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            geometry.setAttribute('velocity', new THREE.BufferAttribute(velocities, 3));
+            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+            const material = new THREE.PointsMaterial({ size: 0.03, vertexColors: true });
+            flyingParticles = new THREE.Points(geometry, material);
+            scene.add(flyingParticles);
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            particles.rotation.x += 0.001;
+            particles.rotation.y += 0.002;
+            particles.rotation.z += 0.0005;
+            updateFlyingParticles();
+            renderer.render(scene, camera);
+        }
+
+        function updateFlyingParticles() {
+            const positions = flyingParticles.geometry.attributes.position.array;
+            const velocities = flyingParticles.geometry.attributes.velocity.array;
+
+            for (let i = 0; i < positions.length; i += 3) {
+                positions[i] += velocities[i];
+                positions[i + 1] += velocities[i + 1];
+                positions[i + 2] += velocities[i + 2];
+
+                const distance = Math.sqrt(positions[i]**2 + positions[i+1]**2 + positions[i+2]**2);
+                if (distance > 3) {
+                    const [x, y, z] = getOrbPosition(Math.random(), Math.random(), Math.random() * 0.5);
+                    positions[i] = x;
+                    positions[i + 1] = y;
+                    positions[i + 2] = z;
+
+                    const speed = 0.005 + Math.random() * 0.01;
+                    velocities[i] = x * speed;
+                    velocities[i + 1] = y * speed;
+                    velocities[i + 2] = z * speed;
+                }
+            }
+
+            flyingParticles.geometry.attributes.position.needsUpdate = true;
+        }
+
+        init();
+
+        document.getElementById('regenerate').addEventListener('click', () => {
+            scene.remove(particles);
+            scene.remove(flyingParticles);
+            createParticles();
+        });
+    </script>
+</body>
+</html>
