@@ -11,7 +11,7 @@ if (!root) throw new Error("Root element not found")
 void framer.showUI({
     position: "top right",
     width: 300,
-    height: 340,
+    height: 330,
 })
 
 ReactDOM.createRoot(root).render(
