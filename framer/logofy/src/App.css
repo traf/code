@@ -35,6 +35,7 @@ main {
 
 .logos {
     grid-template-columns: repeat(4, 1fr);
+    align-content: flex-start;
     overflow-y: auto;
     padding: 0 15px;
     display: grid;
