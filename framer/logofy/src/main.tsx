@@ -12,6 +12,7 @@ void framer.showUI({
     position: "top right",
     width: 300,
     height: 330,
+    resizable: true,
 })
 
 ReactDOM.createRoot(root).render(

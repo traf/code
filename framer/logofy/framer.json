@@ -1,8 +1,6 @@
 {
   "id": "874bcf",
   "name": "Logofy",
-  "modes": [
-    "canvas"
-  ],
+  "modes": ["canvas"],
   "icon": "/icon.svg"
 }

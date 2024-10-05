@@ -49,6 +49,7 @@ main {
     aspect-ratio: 1 / 1;
     align-items: center;
     border-radius: 8px;
+    user-select: none;
     transition: none;
     cursor: pointer;
     display: flex;
@@ -64,3 +65,13 @@ main {
     height: auto;
     width: 24px;
 }
+
+.button {
+    background-color: var(--framer-color-tint-dark);
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+}
+

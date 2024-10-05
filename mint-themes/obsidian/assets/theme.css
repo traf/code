@@ -1,0 +1,20 @@
+:root {
+    --background: #000;
+    --color:      #fff;
+    --primary:    #222;
+    --muted:      #333;
+  
+    --border-color: #222;
+    --border-width: 1px;
+  
+    --font-base:      1rem;
+    --font-family:    sans-serif;
+    --font-weight:    bold;
+    --text-transform: uppercase;
+  
+    --button-background:           #111;
+    --button-background-highlight: #222;
+  
+    --card-background:           #111;
+    --card-background-highlight: #222;
+  }

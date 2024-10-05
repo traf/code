@@ -68,6 +68,20 @@ export function App() {
         );
     }, [theme, handleIconClick, modifySvgColor]);
 
+    const handleInsertComponent = useCallback(async () => {
+        try {
+            await framer.addComponentInstance({
+                url: "https://framer.com/m/SVGLogo-5RHf.js@JnAax7qEnUuW0Jcl28qS",
+                attributes: {
+                    width: "40px",
+                    height: "40px"
+                }
+            });
+        } catch (error) {
+            console.error("Error inserting component:", error);
+        }
+    }, []);
+
     return (
         <main>
             <div className="search">
@@ -84,6 +98,7 @@ export function App() {
                     <IconItem key={icon.slug} icon={icon} />
                 ))}
             </div>
+            <button className="button" onClick={handleInsertComponent}>Insert component</button>
         </main>
     )
 }
