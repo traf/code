@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>aura</title>
+    <style>
+        html, body {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #000;
+            padding: 16px;
+            width: 280px;
+            color: #fff;
+        }
+
+        .header {
+            margin-bottom: 24px;
+            align-items: center;
+            display: flex;
+            gap: 12px;
+        }
+
+        .logo {
+            height: 32px;
+            width: 32px;
+        }
+
+        h1 {
+            letter-spacing: -0.5px;
+            margin: -4px 0 0 0;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .sites {
+            flex-direction: column;
+            display: flex;
+            gap: 12px;
+        }
+
+        .site-row {
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.08);
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 12px;
+            user-select: none;
+            cursor: pointer;
+            display: flex;
+            padding: 12px;
+        }
+
+        .site-name {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .switch {
+            display: inline-block;
+            position: relative;
+            height: 20px;
+            width: 32px;
+        }
+
+        .switch input {
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
+
+        .slider {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 100px;
+            position: absolute;
+            cursor: pointer;
+            transition: .3s;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
+
+        .slider:before {
+            background-color: #fff;
+            position: absolute;
+            border-radius: 50%;
+            transition: .3s;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            top: 2px;
+        }
+
+        input:checked+.slider {
+            background-color: #9152F8;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(12px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="/icons/icon128.png" class="logo" alt="aura">
+        <h1>aura</h1>
+    </div>
+    <div class="sites">
+        <div class="site-row" data-site="virtuals">
+            <span class="site-name">virtuals.io</span>
+            <label class="switch">
+                <input type="checkbox" id="virtuals-toggle" data-site="virtuals">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
